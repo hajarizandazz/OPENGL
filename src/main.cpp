@@ -52,5 +52,7 @@ int main()
 
     viewer.scene_root->add(sphere2_node);
 
+
+
     viewer.run();
 }

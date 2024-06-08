@@ -18,25 +18,25 @@ include_directories(${GLM_DIR})
 
 # Source files
 set(SOURCES
-    ${SRC_DIR}/main.cpp
-    ${SRC_DIR}/node.cpp
-    ${SRC_DIR}/shape.cpp
-    ${SRC_DIR}/shader.cpp
-    ${SRC_DIR}/viewer.cpp
-    ${SRC_DIR}/triangle.cpp
-    ${SRC_DIR}/pyramid.cpp
-    ${SRC_DIR}/cylinder.cpp
-    ${SRC_DIR}/sphere.cpp
-    ${SRC_DIR}/texture.cpp
-    ${SRC_DIR}/textured_sphere.cpp
-    ${SRC_DIR}/lighting_sphere.cpp
+        ${SRC_DIR}/main.cpp
+        ${SRC_DIR}/node.cpp
+        ${SRC_DIR}/shape.cpp
+        ${SRC_DIR}/shader.cpp
+        ${SRC_DIR}/viewer.cpp
+        ${SRC_DIR}/triangle.cpp
+        ${SRC_DIR}/pyramid.cpp
+        ${SRC_DIR}/cylinder.cpp
+        ${SRC_DIR}/sphere.cpp
+        ${SRC_DIR}/texture.cpp
+        ${SRC_DIR}/textured_sphere.cpp
+        ${SRC_DIR}/lighting_sphere.cpp
 )
 
 # Define Shader director
-add_compile_definitions(SHADER_DIR="shaders")
+add_compile_definitions(SHADER_DIR="${CMAKE_CURRENT_SOURCE_DIR}/shaders/")
 
 # Define Shader director
-add_compile_definitions(TEXTURE_DIR="textures")
+add_compile_definitions(TEXTURE_DIR="${CMAKE_CURRENT_SOURCE_DIR}/textures/")
 
 # GLEW library
 add_subdirectory(${GLEW_DIR})
