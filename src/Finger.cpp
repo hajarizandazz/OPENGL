@@ -13,12 +13,17 @@
 
 Finger::Finger(Shader *shader_program) : Shape(shader_program) {
 
-    glm::mat4 mat1 = glm::translate(glm::mat4(1.0f), glm::vec3(1.0f, 0.0f, -4.0f))
+    glm::mat4 mat = glm::translate(glm::mat4(1.0f), glm::vec3(1.0f, 0.0f, -4.0f))
         * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, 1.0f))
         * glm::rotate(glm::mat4(1.0f), glm::radians(0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
-    Node* finger_node = new Node(mat1);
+    Node* finger_node = new Node(mat);
+
 
     Shape* bone1 = new LightingSphere(shader_program,glm::vec3(0.0f, 1.0f, 0.0f),
         glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 1.0f));
     finger_node->add(bone1);
+
+    Shape* bone2 = new LightingSphere(shader_program,glm::vec3(0.0f, 1.0f, 0.0f),
+        glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 1.0f));
+    finger_node->add(bone2);
 }
