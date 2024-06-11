@@ -8,7 +8,7 @@
 #include <shape.h>
 
 
-class Finger : public Shape {
+class Finger : public Node {
 public:
     Finger(Shader *shader_program);
 };
