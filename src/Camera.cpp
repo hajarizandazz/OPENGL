@@ -10,7 +10,9 @@
 
 
 // An abstract camera class that processes input and calculates the corresponding Euler Angles, Vectors and Matrices for use in OpenGL
-    Camera::Camera(glm::vec3 position , glm::vec3 up , float yaw, float pitch ) : Front(glm::vec3(0.0f, 0.0f, -1.0f)), MovementSpeed(2.0f), MouseSensitivity(0.1f), Zoom(45.0f){
+    Camera::Camera(glm::vec3 position , glm::vec3 up , float yaw, float pitch ) :
+    Front(glm::vec3(0.0f, 0.0f, -1.0f)), MovementSpeed(2.0f), MouseSensitivity(0.1f), Zoom(45.0f)
+    {
         this->Position = position;
         this->WorldUp = up;
         this->Yaw = yaw;
@@ -51,9 +53,9 @@
         if (constrainPitch)
         {
             if (Pitch > 89.0f)
-                Pitch = -89.0f;
-            if (Pitch < -89.0f)
                 Pitch = 89.0f;
+            if (Pitch < -89.0f)
+                Pitch = -89.0f;
         }
 
         // update Front, Right and Up Vectors using the updated Euler angles

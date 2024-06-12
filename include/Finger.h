@@ -11,6 +11,8 @@
 class Finger : public Node {
 public:
     Finger(Shader *shader_program);
+    Node* all;
+
 };
 
 

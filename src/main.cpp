@@ -6,6 +6,8 @@
 #include "shader.h"
 #include <string>
 
+#include "Finger.h"
+
 #ifndef SHADER_DIR
 #error "SHADER_DIR not defined"
 #endif
@@ -51,6 +53,13 @@ int main()
     palmR_node->add(palmR);
 
     viewer.scene_root->add(palmR_node);
+
+
+
+
+    Finger* test= new Finger(phong_shader);
+
+    viewer.scene_root->add(test->all);
 
 
 
