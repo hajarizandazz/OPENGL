@@ -120,16 +120,16 @@ void Viewer::on_key(int key)
     {
         glfwSetWindowShouldClose(win, GLFW_TRUE);
     }
-    else if (key == GLFW_KEY_W) {
+    else if (key == GLFW_KEY_W || key == GLFW_KEY_UP) {
         cam->ProcessKeyboard(Camera::FORWARD,deltaTime);
     }
-    else if (key == GLFW_KEY_S) {
+    else if (key == GLFW_KEY_S || key == GLFW_KEY_DOWN) {
         cam->ProcessKeyboard(Camera::BACKWARD,deltaTime);
     }
-    else if (key == GLFW_KEY_A) {
+    else if (key == GLFW_KEY_A || key == GLFW_KEY_LEFT) {
         cam->ProcessKeyboard(Camera::LEFT,deltaTime);
     }
-    else if (key == GLFW_KEY_D) {
+    else if (key == GLFW_KEY_D || key == GLFW_KEY_RIGHT) {
         cam->ProcessKeyboard(Camera::RIGHT,deltaTime);
     }
 }
