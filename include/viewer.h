@@ -6,7 +6,7 @@
 
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
-
+#include "camera.h"
 #include "shader.h"
 #include "node.h"
 
