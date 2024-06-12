@@ -76,13 +76,13 @@
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 36,
+				"line" : 38,
 				"parent" : 7
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 39,
+				"line" : 41,
 				"parent" : 7
 			},
 			{
@@ -132,11 +132,11 @@
 				},
 				{
 					"backtrace" : 8,
-					"define" : "SHADER_DIR=\"C:/Users/chloe/CLionProjects/OPENGL/shaders/\""
+					"define" : "SHADER_DIR=\"C:/Users/zacha/CLionProjects/OPENGL/shaders/\""
 				},
 				{
 					"backtrace" : 9,
-					"define" : "TEXTURE_DIR=\"C:/Users/chloe/CLionProjects/OPENGL/textures/\""
+					"define" : "TEXTURE_DIR=\"C:/Users/zacha/CLionProjects/OPENGL/textures/\""
 				},
 				{
 					"backtrace" : 6,
@@ -158,19 +158,19 @@
 			[
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/chloe/CLionProjects/OPENGL/include"
+					"path" : "C:/Users/zacha/CLionProjects/OPENGL/include"
 				},
 				{
 					"backtrace" : 11,
-					"path" : "C:/Users/chloe/CLionProjects/OPENGL/external/glew-cmake/include"
+					"path" : "C:/Users/zacha/CLionProjects/OPENGL/external/glew-cmake/include"
 				},
 				{
 					"backtrace" : 12,
-					"path" : "C:/Users/chloe/CLionProjects/OPENGL/external/glfw/include"
+					"path" : "C:/Users/zacha/CLionProjects/OPENGL/external/glfw/include"
 				},
 				{
 					"backtrace" : 13,
-					"path" : "C:/Users/chloe/CLionProjects/OPENGL/external/glm"
+					"path" : "C:/Users/zacha/CLionProjects/OPENGL/external/glm"
 				}
 			],
 			"language" : "C",

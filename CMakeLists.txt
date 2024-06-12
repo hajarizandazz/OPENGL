@@ -32,6 +32,8 @@ set(SOURCES
         ${SRC_DIR}/lighting_sphere.cpp
         src/Camera.cpp
         include/camera.h
+        src/Finger.cpp
+        include/Finger.h
 )
 
 # Define Shader director

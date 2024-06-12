@@ -27,7 +27,7 @@ int main()
     // get textures directory
     std::string texture_dir = TEXTURE_DIR;
 
-    Texture *texture = new Texture(texture_dir + "texture1.png");
+    /*Texture *texture = new Texture(texture_dir + "texture1.png");
     Shape* sphere1 = new TexturedSphere(texture_shader, texture);
     glm::mat4 sphere1_mat = glm::translate(glm::mat4(1.0f), glm::vec3(-1.0f, 0.0f, -4.0f))
         * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, 1.0f))
@@ -38,19 +38,19 @@ int main()
     sphere1_node->add(sphere1);
 
     viewer.scene_root->add(sphere1_node);
-    
+    */
     Shader *phong_shader = new Shader(shader_dir + "phong.vert", shader_dir + "phong.frag");
 
-    Shape* sphere2 = new LightingSphere(phong_shader, glm::vec3(0.0f, 1.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 1.0f));
-    glm::mat4 sphere2_mat = glm::translate(glm::mat4(1.0f), glm::vec3(1.0f, 0.0f, -4.0f))
+    Shape* palmR = new LightingSphere(phong_shader, glm::vec3(0.0f, 1.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 1.0f));
+    glm::mat4 palmR_mat = glm::translate(glm::mat4(1.0f), glm::vec3(1.0f, 0.0f, -4.0f))
         * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, 1.0f))
         * glm::rotate(glm::mat4(1.0f), glm::radians(0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
     
-    Node* sphere2_node = new Node(sphere2_mat);
+    Node* palmR_node = new Node(palmR_mat);
 
-    sphere2_node->add(sphere2);
+    palmR_node->add(palmR);
 
-    viewer.scene_root->add(sphere2_node);
+    viewer.scene_root->add(palmR_node);
 
 
 

@@ -31,13 +31,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 53,
+				"line" : 55,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 54,
+				"line" : 56,
 				"parent" : 0
 			},
 			{
@@ -52,13 +52,13 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 36,
+				"line" : 38,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 39,
+				"line" : 41,
 				"parent" : 0
 			},
 			{
@@ -108,11 +108,11 @@
 				},
 				{
 					"backtrace" : 5,
-					"define" : "SHADER_DIR=\"C:/Users/chloe/CLionProjects/OPENGL/shaders/\""
+					"define" : "SHADER_DIR=\"C:/Users/zacha/CLionProjects/OPENGL/shaders/\""
 				},
 				{
 					"backtrace" : 6,
-					"define" : "TEXTURE_DIR=\"C:/Users/chloe/CLionProjects/OPENGL/textures/\""
+					"define" : "TEXTURE_DIR=\"C:/Users/zacha/CLionProjects/OPENGL/textures/\""
 				},
 				{
 					"backtrace" : 2,
@@ -131,19 +131,19 @@
 			[
 				{
 					"backtrace" : 7,
-					"path" : "C:/Users/chloe/CLionProjects/OPENGL/include"
+					"path" : "C:/Users/zacha/CLionProjects/OPENGL/include"
 				},
 				{
 					"backtrace" : 8,
-					"path" : "C:/Users/chloe/CLionProjects/OPENGL/external/glew-cmake/include"
+					"path" : "C:/Users/zacha/CLionProjects/OPENGL/external/glew-cmake/include"
 				},
 				{
 					"backtrace" : 9,
-					"path" : "C:/Users/chloe/CLionProjects/OPENGL/external/glfw/include"
+					"path" : "C:/Users/zacha/CLionProjects/OPENGL/external/glfw/include"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/chloe/CLionProjects/OPENGL/external/glm"
+					"path" : "C:/Users/zacha/CLionProjects/OPENGL/external/glm"
 				}
 			],
 			"language" : "CXX",
@@ -160,7 +160,8 @@
 				8,
 				9,
 				10,
-				11
+				11,
+				12
 			]
 		}
 	],
@@ -234,7 +235,15 @@
 				8,
 				9,
 				10,
-				11
+				11,
+				12
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				13
 			]
 		}
 	],
@@ -311,6 +320,17 @@
 			"compileGroupIndex" : 0,
 			"path" : "src/lighting_sphere.cpp",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/Finger.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/Finger.h",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"
