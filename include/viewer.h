@@ -15,7 +15,7 @@ public:
     Viewer(int width=1500, int height=1000);
 
     void run();
-    void on_key(int key,float currentFrame);
+    void on_key(int key);
     void on_mouse(double xpos, double ypos);
     Node *scene_root;
 

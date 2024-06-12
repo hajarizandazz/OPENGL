@@ -105,15 +105,16 @@ void Viewer::run()
 
 void Viewer::key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
-    float currentFrame = glfwGetTime();//TODO :  regler probleme plus on attend plus on part loin
+
     Viewer* viewer = static_cast<Viewer*>(glfwGetWindowUserPointer(window));
-    viewer->on_key(key,currentFrame);
+    viewer->on_key(key);
 }
 
-void Viewer::on_key(int key,float currentFrame)
+void Viewer::on_key(int key)
 {
-    deltaTime = currentFrame - lastFrame;
-    lastFrame = currentFrame;
+
+    deltaTime = 0.05;
+
     // 'Q' or 'Escape' quits
     if (key == GLFW_KEY_ESCAPE || key == GLFW_KEY_Q)
     {
