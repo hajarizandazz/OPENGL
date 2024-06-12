@@ -21,6 +21,8 @@ Viewer::Viewer(int width, int height)
     glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
     
     win = glfwCreateWindow(width, height, "Viewer", NULL, NULL);
+    cam=new Camera(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f), -90.0f,0.0f);
+    firstMouse=true;
 
     if (win == NULL) {
         std::cerr << "Failed to create window" << std::endl;
@@ -29,6 +31,8 @@ Viewer::Viewer(int width, int height)
 
     // make win's OpenGL context current; no OpenGL calls can happen before
     glfwMakeContextCurrent(win);
+    glfwSetInputMode(win, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+
 
     if (glewInit() != GLEW_OK)
     {
@@ -40,7 +44,8 @@ Viewer::Viewer(int width, int height)
     glfwSetWindowUserPointer(win, this);
 
     // register event handlers
-    glfwSetKeyCallback(win, key_callback_static);
+    glfwSetKeyCallback(win, key_callback);
+    glfwSetCursorPosCallback(win, mouse_callback);
 
     // useful message to check OpenGL renderer characteristics
     std::cout << glGetString(GL_VERSION) << ", GLSL "
@@ -68,12 +73,19 @@ void Viewer::run()
         // clear draw buffer
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
+
+        glm::mat4 view = glm::mat4(1.0f); // make sure to initialize matrix to identity matrix first
+        float radius = 10.0f;
+        float camX = static_cast<float>(sin(glfwGetTime()) * radius);
+        float camZ = static_cast<float>(cos(glfwGetTime()) * radius);
+        view = glm::lookAt(cam->Position, cam->Position+cam->Front, cam->Up);
+
         glm::mat4 model = glm::mat4(1.0f);
 
         glm::mat4 rot_mat = glm::mat4(1.0f);
         glm::mat4 tra_mat = glm::mat4(1.0f);
         glm::mat4 sca_mat = glm::mat4(1.0f);
-        glm::mat4 view = tra_mat * rot_mat * sca_mat;
+        //glm::mat4 view = tra_mat * rot_mat * sca_mat;
 
         glm::mat4 projection = glm::perspective(glm::radians(45.0f), 1.0f, 0.1f, 10.0f);
 
@@ -90,17 +102,52 @@ void Viewer::run()
     glfwTerminate();
 }
 
-void Viewer::key_callback_static(GLFWwindow* window, int key, int scancode, int action, int mods)
+void Viewer::key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
+    float currentFrame = glfwGetTime();//TODO :  regler probleme plus on attend plus on part loin
     Viewer* viewer = static_cast<Viewer*>(glfwGetWindowUserPointer(window));
-    viewer->on_key(key);
+    viewer->on_key(key,currentFrame);
 }
 
-void Viewer::on_key(int key)
+void Viewer::on_key(int key,float currentFrame)
 {
+    deltaTime = currentFrame - lastFrame;
+    lastFrame = currentFrame;
     // 'Q' or 'Escape' quits
     if (key == GLFW_KEY_ESCAPE || key == GLFW_KEY_Q)
     {
         glfwSetWindowShouldClose(win, GLFW_TRUE);
     }
+    else if (key == GLFW_KEY_W) {
+        cam->ProcessKeyboard(Camera::FORWARD,deltaTime);
+    }
+    else if (key == GLFW_KEY_S) {
+        cam->ProcessKeyboard(Camera::BACKWARD,deltaTime);
+    }
+    else if (key == GLFW_KEY_A) {
+        cam->ProcessKeyboard(Camera::LEFT,deltaTime);
+    }
+    else if (key == GLFW_KEY_D) {
+        cam->ProcessKeyboard(Camera::RIGHT,deltaTime);
+    }
+}
+
+void Viewer::mouse_callback(GLFWwindow* window, double xpos, double ypos) {
+    Viewer* viewer = static_cast<Viewer*>(glfwGetWindowUserPointer(window));
+    viewer->on_mouse(xpos,ypos);
+}
+
+void Viewer::on_mouse(double xpos, double ypos) {
+    if (firstMouse) // initially set to true
+    {
+        lastX = xpos;
+        lastY = ypos;
+        firstMouse = false;
+    }
+
+    float xoffset = xpos - lastX;
+    float yoffset = lastY - ypos; // reversed since y-coordinates range from bottom to top
+    lastX = xpos;
+    lastY = ypos;
+    cam->ProcessMouseMovement(xoffset,yoffset,true);
 }
