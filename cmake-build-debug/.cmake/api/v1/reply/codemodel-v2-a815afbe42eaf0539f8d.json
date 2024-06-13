@@ -182,28 +182,28 @@
 				{
 					"directoryIndex" : 3,
 					"id" : "glfw::@ca12bac854c2ac6b2230",
-					"jsonFile" : "target-glfw-Debug-e1f3a07cb190b3e0ec0d.json",
+					"jsonFile" : "target-glfw-Debug-8242f1116bdcb3e4a516.json",
 					"name" : "glfw",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "libglew_shared::@fc7cbd6ba58880f755cb",
-					"jsonFile" : "target-libglew_shared-Debug-82c0c3c119ea583e834c.json",
+					"jsonFile" : "target-libglew_shared-Debug-02742ba0e5c0d1a398f9.json",
 					"name" : "libglew_shared",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "libglew_static::@fc7cbd6ba58880f755cb",
-					"jsonFile" : "target-libglew_static-Debug-3077a9721a648c57d0bd.json",
+					"jsonFile" : "target-libglew_static-Debug-1904018e89c56f6a4bac.json",
 					"name" : "libglew_static",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "opengl_program::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-opengl_program-Debug-42339ada318d0b7b194a.json",
+					"jsonFile" : "target-opengl_program-Debug-65776bd78858ac97a3fa.json",
 					"name" : "opengl_program",
 					"projectIndex" : 0
 				},
@@ -227,8 +227,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/chloe/CLionProjects/OPENGL1.0/cmake-build-debug",
-		"source" : "C:/Users/chloe/CLionProjects/OPENGL1.0"
+		"build" : "C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug",
+		"source" : "C:/Users/zacha/CLionProjects/OPENGL"
 	},
 	"version" : 
 	{
