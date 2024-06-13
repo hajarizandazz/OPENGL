@@ -62,7 +62,7 @@ int main()
 
     viewer.scene_root->add(test->all);*/
 
-    Texture *texture = new Texture(texture_dir + "texturesable1.png");
+    Texture *texture = new Texture(texture_dir + "texturesablelisse.png");
 
     Shape* text = new RectangleText(texture_shader,texture);
 
