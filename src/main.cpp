@@ -6,6 +6,7 @@
 #include "shader.h"
 #include <string>
 
+#include "Egg.h"
 #include "Finger.h"
 
 #ifndef SHADER_DIR
@@ -54,14 +55,12 @@ int main()
 
     viewer.scene_root->add(palmR_node);
 
+    auto color = glm::vec3(0.0f, 1.0f, 1.0f);
+    auto lightpos = glm::vec3(1.0f, 1.0f, 1.0f);
+    //Finger* test= new Finger(phong_shader, 1.0f);
+    Egg* test = new Egg(0.1f, phong_shader, lightpos, color);
 
-
-
-    Finger* test= new Finger(phong_shader);
-
-    viewer.scene_root->add(test->all);
-
-
+    viewer.scene_root->add(test->node);
 
     viewer.run();
 }

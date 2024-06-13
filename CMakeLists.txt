@@ -34,6 +34,8 @@ set(SOURCES
         include/camera.h
         src/Finger.cpp
         include/Finger.h
+        src/Egg.cpp
+        src/Egg.h
 )
 
 # Define Shader director
