@@ -39,7 +39,7 @@ set(SOURCES
         src/RectangleText.cpp
         include/RectangleText.h
         src/Egg.cpp
-        src/Egg.h
+        include/Egg.h
 )
 
 # Define Shader director

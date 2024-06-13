@@ -2,7 +2,7 @@
 // Created by zacha on 13/06/2024.
 //
 
-#include "Egg.h"
+#include <Egg.h>
 
 #include <lighting_sphere.h>
 #include <shader.h>
@@ -15,8 +15,8 @@ Egg::Egg(float size, Shader *shader_program, glm::vec3 lightPos, glm::vec3 eggCo
 
     // Create smaller nodes at extremity
     auto small = glm::scale(glm::mat4(1.f), size/10*glm::vec3(1.0f, 1.0f, 1.0f));
-    baseNode = new Node(glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, size*1.2, 0.0f))*small);
-    endNode = new Node(glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, -size*1.2, 0.0f))*small);
+    baseNode = new Node(glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, size, 0.0f))*small);
+    endNode = new Node(glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, -size, 0.0f))*small);
 
     baseNode->add(new LightingSphere(shader_program, lightPos, lightColor, eggColor));
     endNode->add(new LightingSphere(shader_program, lightPos, lightColor, eggColor));

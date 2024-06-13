@@ -470,6 +470,9 @@
 		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/src/window.c">
 			<Option target="glfw"/>
 		</Unit>
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/include/Egg.h">
+			<Option target="opengl_program"/>
+		</Unit>
 		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/include/Finger.h">
 			<Option target="opengl_program"/>
 		</Unit>
@@ -486,9 +489,6 @@
 			<Option target="opengl_program"/>
 		</Unit>
 		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/src/Egg.cpp">
-			<Option target="opengl_program"/>
-		</Unit>
-		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/src/Egg.h">
 			<Option target="opengl_program"/>
 		</Unit>
 		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/src/Finger.cpp">

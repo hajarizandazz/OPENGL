@@ -8,11 +8,25 @@
 #include <shader.h>
 #include <shape.h>
 
+#include "Egg.h"
 
-class Finger : public Node {
+
+class Finger {
 public:
     Finger(Shader *shader_program, float size);
+
     Node* base;
+    Node* mid;
+    Node* head;
+
+    Egg* baseEgg;
+    Egg* midEgg;
+    Egg* headEgg;
+
+    void alignJoints();
+
+    void transform(glm::mat4 transfo);
+
     void rotateElbow(int angle);
     void rotateCurl(int angle);
     void rotateWave(int angle);

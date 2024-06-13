@@ -35,3 +35,4 @@ void Node::key_handler(int key) const {
 }
 
 glm::mat4 Node::getMat() {return transform_;}
+void Node::move(glm::mat4 transfo){transform_*=transfo;}

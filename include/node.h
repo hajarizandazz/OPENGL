@@ -15,6 +15,7 @@ public:
     void draw(glm::mat4& model, glm::mat4& view, glm::mat4& projection);
     void key_handler(int key) const;
     glm::mat4 getMat();
+    void move(glm::mat4 movement);
     
 private:
     glm::mat4 transform_;
