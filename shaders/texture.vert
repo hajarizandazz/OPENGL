@@ -9,5 +9,5 @@ out vec2 frag_tex_coords;
 
 void main() {
     gl_Position = projection * view * model * vec4(position, 1.0);
-    frag_tex_coords = position.xy;
+    frag_tex_coords = position.xz;
 }

@@ -16,6 +16,7 @@ void RectangleText::draw(glm::mat4& model, glm::mat4& view, glm::mat4& projectio
 
     glUseProgram(this->shader_program_);
 
+
     // texture access setups
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, this->texture->getGLid());

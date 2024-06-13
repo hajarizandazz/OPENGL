@@ -18,6 +18,6 @@ public:
     virtual ~Rectangle();
 
 private:
-    GLuint VAO{};
-    GLuint VBO{};
+    GLuint VAO;
+    GLuint VBO;
 };

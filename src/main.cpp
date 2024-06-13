@@ -33,8 +33,8 @@ int main()
     // get textures directory
     std::string texture_dir = TEXTURE_DIR;
 
-    /*Texture *texture = new Texture(texture_dir + "texture1.png");
-    Shape* sphere1 = new TexturedSphere(texture_shader, texture);
+    Texture *texterre = new Texture(texture_dir + "BeachBall.jpg");
+    Shape* sphere1 = new TexturedSphere(texture_shader, texterre);
     glm::mat4 sphere1_mat = glm::translate(glm::mat4(1.0f), glm::vec3(-1.0f, 0.0f, -4.0f))
         * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, 1.0f))
         * glm::rotate(glm::mat4(1.0f), glm::radians(0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
@@ -44,7 +44,7 @@ int main()
     sphere1_node->add(sphere1);
 
     viewer.scene_root->add(sphere1_node);
-    */
+
     Shader *phong_shader = new Shader(shader_dir + "phong.vert", shader_dir + "phong.frag");
 
     Shape* palmR = new LightingSphere(phong_shader, glm::vec3(0.0f, 1.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 1.0f));
@@ -62,7 +62,7 @@ int main()
 
     viewer.scene_root->add(test->all);*/
 
-    Texture *texture = new Texture(texture_dir + "textureherbe.png");
+    Texture *texture = new Texture(texture_dir + "texturesable1.png");
 
     Shape* text = new RectangleText(texture_shader,texture);
 

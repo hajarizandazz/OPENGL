@@ -115,7 +115,7 @@ void Viewer::on_key(int key)
 
     deltaTime = 0.05;
 
-    // 'Q' or 'Escape' quits
+
     if (key == GLFW_KEY_ESCAPE || key == GLFW_KEY_Q)
     {
         glfwSetWindowShouldClose(win, GLFW_TRUE);
