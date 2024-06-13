@@ -79,7 +79,7 @@ int main()
     auto color = glm::vec3(0.0f, 1.0f, 1.0f);
     auto lightpos = glm::vec3(1.0f, 1.0f, 1.0f);
     //Finger* test= new Finger(phong_shader, 1.0f);
-    Egg* test = new Egg(0.1f, phong_shader, lightpos, color);
+    Egg* test = new Egg(0.05f, phong_shader, lightpos, color);
     Node* flatEgg = new Node(glm::rotate(glm::mat4(1.0f), glm::radians(90.0f), glm::vec3(1.0f, 0.0f, 0.0f)));
     flatEgg->add(test->node);
     viewer.scene_root->add(flatEgg);

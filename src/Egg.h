@@ -13,6 +13,10 @@ class Egg : public Node {
 public:
     Egg(float size, Shader *shader_program, glm::vec3 lightPos, glm::vec3 eggColor, glm::vec3 lightColor = glm::vec3(1.0f, 1.0f, 1.0f));
     Node* node;
+    Node* baseNode;
+    Node* endNode;
+    glm::vec3 get1Pos ();
+    glm::vec3 get2Pos ();
 };
 
 

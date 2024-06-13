@@ -33,3 +33,5 @@ void Node::key_handler(int key) const {
             child->key_handler(key);
     }
 }
+
+glm::mat4 Node::getMat() {return transform_;}

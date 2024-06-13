@@ -18,8 +18,7 @@ Finger::Finger(Shader *shader_program, float size/*, float angleElbow, float ang
     // Proportions par défaut 90% 100% 40%
     auto ovoid = size*glm::vec3(0.5f, 2.5f, 0.5f);
     auto orientation = glm::rotate(glm::mat4(1.0f), glm::radians(0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
-    auto color = glm::vec3(0.0f, 1.0f, 1.0f);
-    auto lightpos = glm::vec3(1.0f, 1.0f, 1.0f);
+
     glm::mat4 matbase = position
         * glm::scale(glm::mat4(1.f), 0.9f*ovoid)
         * orientation;
@@ -31,12 +30,17 @@ Finger::Finger(Shader *shader_program, float size/*, float angleElbow, float ang
     glm::mat4 mathead = glm::translate(glm::mat4(1.0f), glm::vec3(0.6f, 0.0f, 0.0f))
         * glm::scale(glm::mat4(0.3f), 0.4f*ovoid)
         * glm::rotate(glm::mat4(1.0f), glm::radians(0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+
+    auto color = glm::vec3(0.0f, 1.0f, 1.0f);
+    auto lightpos = glm::vec3(1.0f, 1.0f, 1.0f);
+
     auto baseEgg = new Egg(size, shader_program, lightpos, color);
     base = baseEgg->node;
-    Node* mid = new Node(matmid);
     Node* head = new Node(mathead);
-    base->add(mid);
+    Node* mid = new Node(matmid);
+
     mid->add(head);
+    base->add(mid);
 
     Shape* HeadEgg = new LightingSphere(shader_program,glm::vec3(0.0f, 1.0f, 0.0f),
         glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 1.0f));
@@ -47,7 +51,6 @@ Finger::Finger(Shader *shader_program, float size/*, float angleElbow, float ang
     Shape* BaseEgg = new LightingSphere(shader_program,glm::vec3(0.0f, 1.0f, 0.0f),
         glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 1.0f));
     base->add(BaseEgg);
-
 }
 void Finger::rotateElbow(int angle) {}
 void Finger::rotateCurl(int angle) {}
