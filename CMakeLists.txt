@@ -34,6 +34,10 @@ set(SOURCES
         include/camera.h
         src/Finger.cpp
         include/Finger.h
+        src/rectangle.cpp
+        include/rectangle.h
+        src/RectangleText.cpp
+        include/RectangleText.h
         src/Egg.cpp
         src/Egg.h
 )

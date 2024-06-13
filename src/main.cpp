@@ -5,9 +5,12 @@
 #include "node.h"
 #include "shader.h"
 #include <string>
+#include <triangle.h>
 
 #include "Egg.h"
 #include "Finger.h"
+#include "rectangle.h"
+#include "RectangleText.h"
 
 #ifndef SHADER_DIR
 #error "SHADER_DIR not defined"
@@ -54,6 +57,25 @@ int main()
     palmR_node->add(palmR);
 
     viewer.scene_root->add(palmR_node);
+/*
+    Finger* test= new Finger(phong_shader);
+
+    viewer.scene_root->add(test->all);*/
+
+    Texture *texture = new Texture(texture_dir + "textureherbe.png");
+
+    Shape* text = new RectangleText(texture_shader,texture);
+
+    glm::mat4 text_mat = glm::translate(glm::mat4(1.0f), glm::vec3(2.0f, -4.0f, 2.0f))
+        * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, 1.0f))
+        * glm::rotate(glm::mat4(1.0f), glm::radians(90.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+
+    Node* text_node = new Node(text_mat);
+
+    text_node->add(text);
+
+    viewer.scene_root->add(text);
+
 
     auto color = glm::vec3(0.0f, 1.0f, 1.0f);
     auto lightpos = glm::vec3(1.0f, 1.0f, 1.0f);
