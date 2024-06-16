@@ -47,7 +47,7 @@ int main()
 
     Shader *phong_shader = new Shader(shader_dir + "phong.vert", shader_dir + "phong.frag");
 
-    Shape* palmR = new LightingSphere(phong_shader, glm::vec3(0.0f, 1.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 1.0f));
+    Shape* palmR = new LightingSphere(phong_shader, glm::vec3(-5.0f, -5.0f, 5.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 1.0f));
     glm::mat4 palmR_mat = glm::translate(glm::mat4(1.0f), glm::vec3(1.0f, 0.0f, -4.0f))
         * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, 1.0f))
         * glm::rotate(glm::mat4(1.0f), glm::radians(0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
@@ -62,6 +62,7 @@ int main()
 
     viewer.scene_root->add(test->all);*/
 
+//le sol
     Texture *texture = new Texture(texture_dir + "sand_texture.jpg");
 
     Shader *textrect_shader = new Shader(shader_dir + "textrect.vert", shader_dir + "textrect.frag");
@@ -77,6 +78,81 @@ int main()
     text_node->add(text);
 
     viewer.scene_root->add(text_node);
+
+//les murs
+
+    Shape* rect1 = new Rectangle(phong_shader);
+
+    glm::mat4 rect1_mat = glm::translate(glm::mat4(1.0f), glm::vec3(5.0f, 0.0f, 0.0f))
+                         * glm::scale(glm::mat4(1.0f), 10.0f * glm::vec3(1.0f, 1.0f, 1.0f))
+                         * glm::rotate(glm::mat4(1.0f), glm::radians(90.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+
+    Node* rect1_node = new Node(rect1_mat);
+
+    rect1_node->add(rect1);
+
+    viewer.scene_root->add(rect1_node);
+
+
+
+    Shape* rect2 = new Rectangle(phong_shader);
+
+    glm::mat4 rect2_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, 5.0f))
+                          * glm::scale(glm::mat4(1.0f), 10.0f * glm::vec3(1.0f, 1.0f, 1.0f))
+                          * glm::rotate(glm::mat4(1.0f), glm::radians(90.0f), glm::vec3(0.0f, 0.0f, 1.0f));
+
+    Node* rect2_node = new Node(rect2_mat);
+
+    rect2_node->add(rect2);
+
+
+    viewer.scene_root->add(rect2_node);
+
+
+
+    Shape* rect3 = new Rectangle(phong_shader);
+
+    glm::mat4 rect3_mat = glm::translate(glm::mat4(1.0f), glm::vec3(-5.0f, 0.0f, 0.0f))
+                          * glm::scale(glm::mat4(1.0f), 10.0f * glm::vec3(1.0f, 1.0f, 1.0f))
+                          * glm::rotate(glm::mat4(1.0f), glm::radians(90.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+
+    Node* rect3_node = new Node(rect3_mat);
+
+    rect3_node->add(rect3);
+
+    viewer.scene_root->add(rect3_node);
+
+
+
+    Shape* rect4 = new Rectangle(phong_shader);
+
+    glm::mat4 rect4_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, -5.0f))
+                          * glm::scale(glm::mat4(1.0f), 10.0f * glm::vec3(1.0f, 1.0f, 1.0f))
+                          * glm::rotate(glm::mat4(1.0f), glm::radians(90.0f), glm::vec3(0.0f, 0.0f, 1.0f));
+
+    Node* rect4_node = new Node(rect4_mat);
+
+    rect4_node->add(rect4);
+
+
+    viewer.scene_root->add(rect4_node);
+
+//le ciel
+
+    Shape* rect5 = new Rectangle(phong_shader);
+
+    glm::mat4 rect5_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 5.0f, 0.0f))
+                          * glm::scale(glm::mat4(1.0f), 10.0f * glm::vec3(1.0f, 1.0f, 1.0f))
+                          * glm::rotate(glm::mat4(1.0f), glm::radians(90.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+
+    Node* rect5_node = new Node(rect5_mat);
+
+    rect5_node->add(rect5);
+
+
+    viewer.scene_root->add(rect5_node);
+
+
 
     Finger* Rarm = new Finger(phong_shader, .01f);
     Node* Rshoulder = new Node(glm::translate(glm::mat4(1.0f), glm::vec3(1.0f, 0.0f, 1.0f)));
