@@ -47,20 +47,15 @@ int main()
 
     Shader *phong_shader = new Shader(shader_dir + "phong.vert", shader_dir + "phong.frag");
 
-    Shape* palmR = new LightingSphere(phong_shader, glm::vec3(0.0f, 1.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 1.0f));
+    /*Shape* palmR = new LightingSphere(phong_shader, glm::vec3(0.0f, 1.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 1.0f));
     glm::mat4 palmR_mat = glm::translate(glm::mat4(1.0f), glm::vec3(1.0f, 0.0f, -4.0f))
         * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, 1.0f))
         * glm::rotate(glm::mat4(1.0f), glm::radians(0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
     
     Node* palmR_node = new Node(palmR_mat);
-
     palmR_node->add(palmR);
 
-    viewer.scene_root->add(palmR_node);
-/*
-    Finger* test= new Finger(phong_shader);
-
-    viewer.scene_root->add(test->all);*/
+    viewer.scene_root->add(palmR_node);*/
 
     Texture *texture = new Texture(texture_dir + "texturesablelisse.png");
 
@@ -76,17 +71,32 @@ int main()
 
     viewer.scene_root->add(text);
 
-    Finger* finger = new Finger(phong_shader, .01f);
-    Node* fing = new Node(glm::translate(glm::mat4(1.0f), glm::vec3(1.0f, 0.0f, 1.0f)));
-    fing->add(finger->base);
-    viewer.scene_root->add(fing);
+    Finger* Rarm = new Finger(phong_shader, .01f);
+    Node* Rshoulder = new Node(glm::translate(glm::mat4(1.0f), glm::vec3(1.0f, 0.0f, 1.0f)));
+    Rshoulder->add(Rarm->base);
+    viewer.scene_root->add(Rshoulder);
 
+    Finger* Larm = new Finger(phong_shader, .01f);
+    Node* Lshoulder = new Node(glm::translate(glm::mat4(1.0f), glm::vec3(1.0f, 0.0f, 1.0f)));
+    Lshoulder->add(Larm->base);
+    viewer.scene_root->add(Lshoulder);
+
+    Finger* Rfing1 = new Finger(phong_shader, .01f);
+    Finger* Rfing2 = new Finger(phong_shader, .01f);
+    Finger* Rfing3 = new Finger(phong_shader, .01f);
+
+    Node* Rhand = new Node(glm::translate(glm::mat4(1.0f), glm::vec3(1.0f, 0.0f, 1.0f)));
+    Rhand->add(Rfing1->base);
+    Rhand->add(Rfing2->base);
+    Rhand->add(Rfing3->base);
+    viewer.scene_root->add(Rhand);
+    /*
     auto color = glm::vec3(0.0f, 1.0f, 1.0f);
     auto lightpos = glm::vec3(1.0f, 1.0f, 1.0f);
     Egg* test = new Egg(0.05f, phong_shader, lightpos, color);
     Node* flatEgg = new Node(glm::rotate(glm::mat4(1.0f), glm::radians(90.0f), glm::vec3(1.0f, 0.0f, 0.0f)));
     flatEgg->add(test->node);
-    viewer.scene_root->add(flatEgg);
+    viewer.scene_root->add(flatEgg);*/
 
     viewer.run();
 }
