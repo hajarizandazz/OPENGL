@@ -91,11 +91,9 @@ int main()
     Finger* Rfing3 = new Finger(phong_shader, .01f);
 
     Node* Rhand = new Node(glm::translate(glm::mat4(1.0f), glm::vec3(1.0f, 0.0f, 1.0f)));
-
     Rhand->add(Rfing1->base);
     Rhand->add(Rfing2->base);
     Rhand->add(Rfing3->base);
-
     viewer.scene_root->add(Rhand);
 
     viewer.run();
