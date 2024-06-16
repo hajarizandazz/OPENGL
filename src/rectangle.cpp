@@ -6,7 +6,7 @@
 //
 // Created by chloe on 13/06/2024.
 //
-#include "../include/Rectangle.h"
+#include <rectangle.h>
 #include <shape.h>
 #include <GL/glew.h>
 

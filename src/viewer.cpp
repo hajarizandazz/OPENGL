@@ -79,7 +79,7 @@ void Viewer::run()
         float radius = 10.0f;
         float camX = static_cast<float>(sin(glfwGetTime()) * radius);
         float camZ = static_cast<float>(cos(glfwGetTime()) * radius);
-        view = glm::lookAt(cam->Position, cam->Position+cam->Front, cam->Up);
+        view = cam->GetViewMatrix();
 
         glm::mat4 model = glm::mat4(1.0f);
 
