@@ -5,6 +5,7 @@
 #include <vector>
 #include <glm/glm.hpp>
 
+
 class Sphere : public Shape {
 public:
     Sphere(Shader* shader_program_, int sector_count = 36, int stack_count = 18);
@@ -27,5 +28,7 @@ private:
     unsigned int num_indices;
 
     GLuint VAO;
-    GLuint buffers[3];
+    GLuint buffers[4];
+    std::vector<glm::vec2> texCoords;
 };
+
