@@ -8,679 +8,565 @@
 		<Option virtualFolders="CMake Files\;CMake Files\external\;CMake Files\external\glfw\;CMake Files\external\glfw\CMake\;CMake Files\external\glfw\src\;CMake Files\external\glfw\docs\;CMake Files\external\glew-cmake\;CMake Files\external\glm\;CMake Files\external\glm\glm\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/chloe/CLionProjects/OPENGL/cmake-build-debug"/>
+				<Option working_dir="C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="opengl_program">
-				<Option output="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/opengl_program" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/chloe/CLionProjects/OPENGL/cmake-build-debug"/>
+				<Option output="C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/opengl_program.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DSHADER_DIR=&quot;/home/chloe/CLionProjects/OPENGL/shaders/&quot;"/>
-					<Add option="-DTEXTURE_DIR=&quot;/home/chloe/CLionProjects/OPENGL/textures/&quot;"/>
+					<Add option="-DSHADER_DIR=&quot;C:/Users/zacha/CLionProjects/OPENGL/shaders/&quot;"/>
+					<Add option="-DTEXTURE_DIR=&quot;C:/Users/zacha/CLionProjects/OPENGL/textures/&quot;"/>
 					<Add option="-DGLEW_STATIC"/>
+					<Add option="-DWIN32_MEAN_AND_LEAN"/>
+					<Add option="-DVC_EXTRALEAN"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
 					<Add option="-DGLEW_NO_GLU"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/include"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/external/glew-cmake/include"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/external/glfw/include"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/external/glm"/>
-					<Add directory="/usr/include/c++/12"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
-					<Add directory="/usr/include/c++/12/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/include"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/external/glew-cmake/include"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/include"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/external/glm"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 opengl_program"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 opengl_program"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="opengl_program/fast">
-				<Option output="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/opengl_program" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/chloe/CLionProjects/OPENGL/cmake-build-debug"/>
+				<Option output="C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/opengl_program.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-DSHADER_DIR=&quot;/home/chloe/CLionProjects/OPENGL/shaders/&quot;"/>
-					<Add option="-DTEXTURE_DIR=&quot;/home/chloe/CLionProjects/OPENGL/textures/&quot;"/>
+					<Add option="-DSHADER_DIR=&quot;C:/Users/zacha/CLionProjects/OPENGL/shaders/&quot;"/>
+					<Add option="-DTEXTURE_DIR=&quot;C:/Users/zacha/CLionProjects/OPENGL/textures/&quot;"/>
 					<Add option="-DGLEW_STATIC"/>
+					<Add option="-DWIN32_MEAN_AND_LEAN"/>
+					<Add option="-DVC_EXTRALEAN"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
 					<Add option="-DGLEW_NO_GLU"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/include"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/external/glew-cmake/include"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/external/glfw/include"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/external/glm"/>
-					<Add directory="/usr/include/c++/12"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
-					<Add directory="/usr/include/c++/12/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/include"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/external/glew-cmake/include"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/include"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/external/glm"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 opengl_program/fast"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 opengl_program/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/chloe/CLionProjects/OPENGL/cmake-build-debug"/>
+				<Option working_dir="C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/chloe/CLionProjects/OPENGL/cmake-build-debug"/>
+				<Option working_dir="C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="list_install_components">
-				<Option working_dir="/home/chloe/CLionProjects/OPENGL/cmake-build-debug"/>
+				<Option working_dir="C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install">
-				<Option working_dir="/home/chloe/CLionProjects/OPENGL/cmake-build-debug"/>
+				<Option working_dir="C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install/local">
-				<Option working_dir="/home/chloe/CLionProjects/OPENGL/cmake-build-debug"/>
+				<Option working_dir="C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install/strip">
-				<Option working_dir="/home/chloe/CLionProjects/OPENGL/cmake-build-debug"/>
+				<Option working_dir="C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="libglew_static">
-				<Option output="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/lib/libglewd.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake"/>
+				<Option output="C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/lib/libglewd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGLEW_STATIC"/>
+					<Add option="-DWIN32_MEAN_AND_LEAN"/>
+					<Add option="-DVC_EXTRALEAN"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
 					<Add option="-DGLEW_NO_GLU"/>
-					<Add option="-DSHADER_DIR=&quot;/home/chloe/CLionProjects/OPENGL/shaders/&quot;"/>
-					<Add option="-DTEXTURE_DIR=&quot;/home/chloe/CLionProjects/OPENGL/textures/&quot;"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/include"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/external/glew-cmake/include"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/external/glfw/include"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/external/glm"/>
-					<Add directory="/usr/include/c++/12"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
-					<Add directory="/usr/include/c++/12/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add option="-DSHADER_DIR=&quot;C:/Users/zacha/CLionProjects/OPENGL/shaders/&quot;"/>
+					<Add option="-DTEXTURE_DIR=&quot;C:/Users/zacha/CLionProjects/OPENGL/textures/&quot;"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/include"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/external/glew-cmake/include"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/include"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/external/glm"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/Makefile&quot;  VERBOSE=1 libglew_static"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/Makefile&quot;  VERBOSE=1 libglew_static"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="libglew_static/fast">
-				<Option output="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/lib/libglewd.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake"/>
+				<Option output="C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/lib/libglewd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGLEW_STATIC"/>
+					<Add option="-DWIN32_MEAN_AND_LEAN"/>
+					<Add option="-DVC_EXTRALEAN"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
 					<Add option="-DGLEW_NO_GLU"/>
-					<Add option="-DSHADER_DIR=&quot;/home/chloe/CLionProjects/OPENGL/shaders/&quot;"/>
-					<Add option="-DTEXTURE_DIR=&quot;/home/chloe/CLionProjects/OPENGL/textures/&quot;"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/include"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/external/glew-cmake/include"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/external/glfw/include"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/external/glm"/>
-					<Add directory="/usr/include/c++/12"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
-					<Add directory="/usr/include/c++/12/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add option="-DSHADER_DIR=&quot;C:/Users/zacha/CLionProjects/OPENGL/shaders/&quot;"/>
+					<Add option="-DTEXTURE_DIR=&quot;C:/Users/zacha/CLionProjects/OPENGL/textures/&quot;"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/include"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/external/glew-cmake/include"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/include"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/external/glm"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/Makefile&quot;  VERBOSE=1 libglew_static/fast"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/Makefile&quot;  VERBOSE=1 libglew_static/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="libglew_shared">
-				<Option output="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/lib/libglew-sharedd.so" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake"/>
+				<Option output="C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/bin/libglew-sharedd.dll" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake"/>
 				<Option object_output="./"/>
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGLEW_BUILD"/>
+					<Add option="-DWIN32_MEAN_AND_LEAN"/>
+					<Add option="-DVC_EXTRALEAN"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
 					<Add option="-DGLEW_NO_GLU"/>
-					<Add option="-DSHADER_DIR=&quot;/home/chloe/CLionProjects/OPENGL/shaders/&quot;"/>
-					<Add option="-DTEXTURE_DIR=&quot;/home/chloe/CLionProjects/OPENGL/textures/&quot;"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/include"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/external/glew-cmake/include"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/external/glfw/include"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/external/glm"/>
-					<Add directory="/usr/include/c++/12"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
-					<Add directory="/usr/include/c++/12/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add option="-DSHADER_DIR=&quot;C:/Users/zacha/CLionProjects/OPENGL/shaders/&quot;"/>
+					<Add option="-DTEXTURE_DIR=&quot;C:/Users/zacha/CLionProjects/OPENGL/textures/&quot;"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/include"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/external/glew-cmake/include"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/include"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/external/glm"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/Makefile&quot;  VERBOSE=1 libglew_shared"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/Makefile&quot;  VERBOSE=1 libglew_shared"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="libglew_shared/fast">
-				<Option output="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/lib/libglew-sharedd.so" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake"/>
+				<Option output="C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/bin/libglew-sharedd.dll" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake"/>
 				<Option object_output="./"/>
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGLEW_BUILD"/>
+					<Add option="-DWIN32_MEAN_AND_LEAN"/>
+					<Add option="-DVC_EXTRALEAN"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
 					<Add option="-DGLEW_NO_GLU"/>
-					<Add option="-DSHADER_DIR=&quot;/home/chloe/CLionProjects/OPENGL/shaders/&quot;"/>
-					<Add option="-DTEXTURE_DIR=&quot;/home/chloe/CLionProjects/OPENGL/textures/&quot;"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/include"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/external/glew-cmake/include"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/external/glfw/include"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/external/glm"/>
-					<Add directory="/usr/include/c++/12"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
-					<Add directory="/usr/include/c++/12/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add option="-DSHADER_DIR=&quot;C:/Users/zacha/CLionProjects/OPENGL/shaders/&quot;"/>
+					<Add option="-DTEXTURE_DIR=&quot;C:/Users/zacha/CLionProjects/OPENGL/textures/&quot;"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/include"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/external/glew-cmake/include"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/include"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/external/glm"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/Makefile&quot;  VERBOSE=1 libglew_shared/fast"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/Makefile&quot;  VERBOSE=1 libglew_shared/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="uninstall">
-				<Option working_dir="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw"/>
+				<Option working_dir="C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glfw"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/Makefile&quot;  VERBOSE=1 uninstall"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glfw/Makefile&quot;  VERBOSE=1 uninstall"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glfw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glfw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glfw/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="glfw">
-				<Option output="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src"/>
+				<Option output="C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-D_GLFW_X11"/>
-					<Add option="-D_GLFW_WAYLAND"/>
-					<Add option="-DHAVE_MEMFD_CREATE"/>
-					<Add option="-D_DEFAULT_SOURCE"/>
-					<Add option="-DSHADER_DIR=&quot;/home/chloe/CLionProjects/OPENGL/shaders/&quot;"/>
-					<Add option="-DTEXTURE_DIR=&quot;/home/chloe/CLionProjects/OPENGL/textures/&quot;"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/include"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/external/glew-cmake/include"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/external/glfw/include"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/external/glm"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/external/glfw/src"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src"/>
-					<Add directory="/usr/include/c++/12"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
-					<Add directory="/usr/include/c++/12/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add option="-D_GLFW_WIN32"/>
+					<Add option="-DUNICODE"/>
+					<Add option="-D_UNICODE"/>
+					<Add option="-DWINVER=0x0501"/>
+					<Add option="-DSHADER_DIR=&quot;C:/Users/zacha/CLionProjects/OPENGL/shaders/&quot;"/>
+					<Add option="-DTEXTURE_DIR=&quot;C:/Users/zacha/CLionProjects/OPENGL/textures/&quot;"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/include"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/external/glew-cmake/include"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/include"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/external/glm"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/src"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/Makefile&quot;  VERBOSE=1 glfw"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/Makefile&quot;  VERBOSE=1 glfw"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="glfw/fast">
-				<Option output="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src"/>
+				<Option output="C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add option="-D_GLFW_X11"/>
-					<Add option="-D_GLFW_WAYLAND"/>
-					<Add option="-DHAVE_MEMFD_CREATE"/>
-					<Add option="-D_DEFAULT_SOURCE"/>
-					<Add option="-DSHADER_DIR=&quot;/home/chloe/CLionProjects/OPENGL/shaders/&quot;"/>
-					<Add option="-DTEXTURE_DIR=&quot;/home/chloe/CLionProjects/OPENGL/textures/&quot;"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/include"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/external/glew-cmake/include"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/external/glfw/include"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/external/glm"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/external/glfw/src"/>
-					<Add directory="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src"/>
-					<Add directory="/usr/include/c++/12"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
-					<Add directory="/usr/include/c++/12/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/12/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add option="-D_GLFW_WIN32"/>
+					<Add option="-DUNICODE"/>
+					<Add option="-D_UNICODE"/>
+					<Add option="-DWINVER=0x0501"/>
+					<Add option="-DSHADER_DIR=&quot;C:/Users/zacha/CLionProjects/OPENGL/shaders/&quot;"/>
+					<Add option="-DTEXTURE_DIR=&quot;C:/Users/zacha/CLionProjects/OPENGL/textures/&quot;"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/include"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/external/glew-cmake/include"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/include"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/external/glm"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/src"/>
+					<Add directory="C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/Makefile&quot;  VERBOSE=1 glfw/fast"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/Makefile&quot;  VERBOSE=1 glfw/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="update_mappings">
-				<Option working_dir="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src"/>
+				<Option working_dir="C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/Makefile&quot;  VERBOSE=1 update_mappings"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/Makefile&quot;  VERBOSE=1 update_mappings"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/zacha/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/fractional-scale-v1-client-protocol-code.h">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/fractional-scale-v1-client-protocol-code.h.rule">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/fractional-scale-v1-client-protocol.h">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/fractional-scale-v1-client-protocol.h.rule">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/idle-inhibit-unstable-v1-client-protocol-code.h">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/idle-inhibit-unstable-v1-client-protocol-code.h.rule">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/idle-inhibit-unstable-v1-client-protocol.h">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/idle-inhibit-unstable-v1-client-protocol.h.rule">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/pointer-constraints-unstable-v1-client-protocol-code.h">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/pointer-constraints-unstable-v1-client-protocol-code.h.rule">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/pointer-constraints-unstable-v1-client-protocol.h">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/pointer-constraints-unstable-v1-client-protocol.h.rule">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/relative-pointer-unstable-v1-client-protocol-code.h">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/relative-pointer-unstable-v1-client-protocol-code.h.rule">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/relative-pointer-unstable-v1-client-protocol.h">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/relative-pointer-unstable-v1-client-protocol.h.rule">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/viewporter-client-protocol-code.h">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/viewporter-client-protocol-code.h.rule">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/viewporter-client-protocol.h">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/viewporter-client-protocol.h.rule">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/wayland-client-protocol-code.h">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/wayland-client-protocol-code.h.rule">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/wayland-client-protocol.h">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/wayland-client-protocol.h.rule">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/xdg-activation-v1-client-protocol-code.h">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/xdg-activation-v1-client-protocol-code.h.rule">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/xdg-activation-v1-client-protocol.h">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/xdg-activation-v1-client-protocol.h.rule">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/xdg-decoration-unstable-v1-client-protocol-code.h">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/xdg-decoration-unstable-v1-client-protocol-code.h.rule">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/xdg-decoration-unstable-v1-client-protocol.h">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/xdg-decoration-unstable-v1-client-protocol.h.rule">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/xdg-shell-client-protocol-code.h">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/xdg-shell-client-protocol-code.h.rule">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/xdg-shell-client-protocol.h">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw/src/xdg-shell-client-protocol.h.rule">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glew-cmake/src/glew.c">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glew-cmake/src/glew.c">
 			<Option target="libglew_static"/>
 			<Option target="libglew_shared"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/CMake/GenerateMappings.cmake">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/CMake/GenerateMappings.cmake">
 			<Option target="update_mappings"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/include/GLFW/glfw3.h">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/include/GLFW/glfw3.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/include/GLFW/glfw3native.h">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/include/GLFW/glfw3native.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/context.c">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/src/context.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/egl_context.c">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/src/egl_context.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/glx_context.c">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/src/init.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/init.c">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/src/input.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/input.c">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/src/internal.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/internal.h">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/src/mappings.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/linux_joystick.c">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/linux_joystick.h">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/mappings.h">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/mappings.h.in">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/src/mappings.h.in">
 			<Option target="update_mappings"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/monitor.c">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/src/monitor.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/null_init.c">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/src/null_init.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/null_joystick.c">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/src/null_joystick.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/null_joystick.h">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/src/null_joystick.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/null_monitor.c">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/src/null_monitor.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/null_platform.h">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/src/null_platform.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/null_window.c">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/src/null_window.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/osmesa_context.c">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/src/osmesa_context.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/platform.c">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/src/platform.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/platform.h">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/src/platform.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/posix_module.c">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/src/vulkan.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/posix_poll.c">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/src/wgl_context.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/posix_poll.h">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/src/win32_init.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/posix_thread.c">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/src/win32_joystick.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/posix_thread.h">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/src/win32_joystick.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/posix_time.c">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/src/win32_module.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/posix_time.h">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/src/win32_monitor.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/vulkan.c">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/src/win32_platform.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/window.c">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/src/win32_thread.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/wl_init.c">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/src/win32_thread.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/wl_monitor.c">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/src/win32_time.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/wl_platform.h">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/src/win32_time.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/wl_window.c">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/src/win32_window.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/x11_init.c">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/src/window.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/x11_monitor.c">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/x11_platform.h">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/x11_window.c">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/xkb_unicode.c">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/xkb_unicode.h">
-			<Option target="glfw"/>
-		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/include/Egg.h">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/include/Egg.h">
 			<Option target="opengl_program"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/include/Finger.h">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/include/Finger.h">
 			<Option target="opengl_program"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/include/RectangleText.h">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/include/RectangleText.h">
 			<Option target="opengl_program"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/include/camera.h">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/include/camera.h">
 			<Option target="opengl_program"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/include/rectangle.h">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/include/rectangle.h">
 			<Option target="opengl_program"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/src/Camera.cpp">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/src/Camera.cpp">
 			<Option target="opengl_program"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/src/Egg.cpp">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/src/Egg.cpp">
 			<Option target="opengl_program"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/src/Finger.cpp">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/src/Finger.cpp">
 			<Option target="opengl_program"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/src/RectangleText.cpp">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/src/RectangleText.cpp">
 			<Option target="opengl_program"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/src/cylinder.cpp">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/src/cylinder.cpp">
 			<Option target="opengl_program"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/src/lighting_sphere.cpp">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/src/lighting_sphere.cpp">
 			<Option target="opengl_program"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/src/main.cpp">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/src/main.cpp">
 			<Option target="opengl_program"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/src/node.cpp">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/src/node.cpp">
 			<Option target="opengl_program"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/src/pyramid.cpp">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/src/pyramid.cpp">
 			<Option target="opengl_program"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/src/rectangle.cpp">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/src/rectangle.cpp">
 			<Option target="opengl_program"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/src/shader.cpp">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/src/shader.cpp">
 			<Option target="opengl_program"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/src/shape.cpp">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/src/shape.cpp">
 			<Option target="opengl_program"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/src/sphere.cpp">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/src/sphere.cpp">
 			<Option target="opengl_program"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/src/texture.cpp">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/src/texture.cpp">
 			<Option target="opengl_program"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/src/textured_sphere.cpp">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/src/textured_sphere.cpp">
 			<Option target="opengl_program"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/src/triangle.cpp">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/src/triangle.cpp">
 			<Option target="opengl_program"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/src/viewer.cpp">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/src/viewer.cpp">
 			<Option target="opengl_program"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/CMakeLists.txt">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/CMakeLists.txt">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\external\glfw\"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/CMake/cmake_uninstall.cmake.in">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/CMake/cmake_uninstall.cmake.in">
 			<Option virtualFolder="CMake Files\external\glfw\CMake\"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/CMake/glfw3.pc.in">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/CMake/glfw3.pc.in">
 			<Option virtualFolder="CMake Files\external\glfw\CMake\"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/CMake/glfw3Config.cmake.in">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/CMake/glfw3Config.cmake.in">
 			<Option virtualFolder="CMake Files\external\glfw\CMake\"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/src/CMakeLists.txt">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\external\glfw\src\"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glfw/docs/CMakeLists.txt">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glfw/docs/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\external\glfw\docs\"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glew-cmake/CMakeLists.txt">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glew-cmake/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\external\glew-cmake\"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glew-cmake/GeneratePkgConfig.cmake">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glew-cmake/GeneratePkgConfig.cmake">
 			<Option virtualFolder="CMake Files\external\glew-cmake\"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glm/CMakeLists.txt">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glm/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\external\glm\"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL/external/glm/glm/CMakeLists.txt">
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/external/glm/glm/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\external\glm\glm\"/>
 		</Unit>
 	</Project>
