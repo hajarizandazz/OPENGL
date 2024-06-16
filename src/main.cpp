@@ -62,9 +62,11 @@ int main()
 
     viewer.scene_root->add(test->all);*/
 
-    Texture *texture = new Texture(texture_dir + "texturesablelisse.png");
+    Texture *texture = new Texture(texture_dir + "textureherbe.png");
 
-    Shape* text = new RectangleText(texture_shader,texture);
+    Shader *textrect_shader = new Shader(shader_dir + "textrect.vert", shader_dir + "textrect.frag");
+
+    Shape* text = new RectangleText(textrect_shader,texture);
 
     glm::mat4 text_mat = glm::translate(glm::mat4(1.0f), glm::vec3(2.0f, -4.0f, 2.0f))
         * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, 1.0f))
