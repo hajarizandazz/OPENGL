@@ -3,7 +3,7 @@
 #include <cmath>
 
 Sphere::Sphere(Shader* shader_program, int sector_count, int stack_count) :
-    Shape(shader_program), sector_count(sector_count), stack_count(stack_count)
+        Shape(shader_program), sector_count(sector_count), stack_count(stack_count)
 {
     buildVertices();
     buildIndices();
@@ -11,22 +11,28 @@ Sphere::Sphere(Shader* shader_program, int sector_count, int stack_count) :
     glGenVertexArrays(1, &VAO);
     glBindVertexArray(VAO);
 
-    glGenBuffers(3, &buffers[0]);
+    glGenBuffers(4, &buffers[0]);
 
     // Position attribute
     glEnableVertexAttribArray(0);
     glBindBuffer(GL_ARRAY_BUFFER, buffers[0]);
     glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(glm::vec3), &vertices[0], GL_STATIC_DRAW);
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, nullptr);
-    
+
     // Normal attribute
     glEnableVertexAttribArray(1);
     glBindBuffer(GL_ARRAY_BUFFER, buffers[1]);
     glBufferData(GL_ARRAY_BUFFER, normals.size() * sizeof(glm::vec3), &normals[0], GL_STATIC_DRAW);
     glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 0, nullptr);
-    
+
+    // Texture coordinate attribute
+    glEnableVertexAttribArray(2);
+    glBindBuffer(GL_ARRAY_BUFFER, buffers[2]);
+    glBufferData(GL_ARRAY_BUFFER, texCoords.size() * sizeof(glm::vec2), &texCoords[0], GL_STATIC_DRAW);
+    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 0, nullptr);
+
     // Index buffer
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, buffers[2]);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, buffers[3]);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices.size() * sizeof(unsigned int), indices.data(), GL_STATIC_DRAW);
 
     num_indices = static_cast<unsigned int>(indices.size());
@@ -36,7 +42,7 @@ void Sphere::draw(glm::mat4& model, glm::mat4& view, glm::mat4& projection)
 {
     glUseProgram(this->shader_program_);
 
-    glBindVertexArray(VAO);  
+    glBindVertexArray(VAO);
 
     Shape::draw(model, view, projection);
 
@@ -48,6 +54,7 @@ void Sphere::buildVertices()
     // Clear the vertex list
     vertices.clear();
     normals.clear();
+    texCoords.clear();
 
     float radius = 0.5f;
     float x = 0.0f, y = 0.0f, z = 0.0f;
@@ -69,6 +76,11 @@ void Sphere::buildVertices()
             normal = glm::normalize(normal);
             vertices.push_back(vertex);
             normals.push_back(normal);
+
+            // Generate texture coordinates
+            float u = static_cast<float>(j) / sector_count;
+            float v = static_cast<float>(i) / stack_count;
+            texCoords.push_back(glm::vec2(u, v));
         }
     }
 }

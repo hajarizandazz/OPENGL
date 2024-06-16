@@ -36,8 +36,8 @@ int main()
     Texture *texterre = new Texture(texture_dir + "BeachBall.jpg");
     Shape* sphere1 = new TexturedSphere(texture_shader, texterre);
     glm::mat4 sphere1_mat = glm::translate(glm::mat4(1.0f), glm::vec3(-1.0f, 0.0f, -4.0f))
-        * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, 1.0f))
-        * glm::rotate(glm::mat4(1.0f), glm::radians(0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+                            * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, 1.0f))
+                            * glm::rotate(glm::mat4(1.0f), glm::radians(0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
 
     Node* sphere1_node = new Node(sphere1_mat);
 
@@ -57,13 +57,15 @@ int main()
 
     viewer.scene_root->add(palmR_node);*/
 
-    Texture *texture = new Texture(texture_dir + "texturesablelisse.png");
+    Shader *textrect_shader = new Shader(shader_dir + "textrect.vert", shader_dir + "textrect.frag");
 
-    Shape* text = new RectangleText(texture_shader,texture);
+    Texture *texture = new Texture(texture_dir + "textureherbe.png");
+
+    Shape* text = new RectangleText(textrect_shader,texture);
 
     glm::mat4 text_mat = glm::translate(glm::mat4(1.0f), glm::vec3(2.0f, -4.0f, 2.0f))
-        * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, 1.0f))
-        * glm::rotate(glm::mat4(1.0f), glm::radians(90.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+                         * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, 1.0f))
+                         * glm::rotate(glm::mat4(1.0f), glm::radians(90.0f), glm::vec3(1.0f, 0.0f, 0.0f));
 
     Node* text_node = new Node(text_mat);
 

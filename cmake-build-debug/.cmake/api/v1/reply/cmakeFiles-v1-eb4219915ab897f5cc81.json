@@ -1083,8 +1083,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/chloe/CLionProjects/OPENGL/cmake-build-debug",
-		"source" : "/home/chloe/CLionProjects/OPENGL"
+		"build" : "/home/chloe/CLionProjects/OPENGL2.0/cmake-build-debug",
+		"source" : "/home/chloe/CLionProjects/OPENGL2.0"
 	},
 	"version" : 
 	{

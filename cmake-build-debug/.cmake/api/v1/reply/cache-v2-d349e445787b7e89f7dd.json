@@ -67,7 +67,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/chloe/CLionProjects/OPENGL/cmake-build-debug"
+			"value" : "/home/chloe/CLionProjects/OPENGL2.0/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -655,7 +655,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/chloe/CLionProjects/OPENGL/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/home/chloe/CLionProjects/OPENGL2.0/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -775,7 +775,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/chloe/CLionProjects/OPENGL"
+			"value" : "/home/chloe/CLionProjects/OPENGL2.0"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -1827,7 +1827,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glfw"
+			"value" : "/home/chloe/CLionProjects/OPENGL2.0/cmake-build-debug/external/glfw"
 		},
 		{
 			"name" : "GLFW_BUILD_DOCS",
@@ -1959,7 +1959,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/chloe/CLionProjects/OPENGL/external/glfw"
+			"value" : "/home/chloe/CLionProjects/OPENGL2.0/external/glfw"
 		},
 		{
 			"name" : "HAVE_MEMFD_CREATE",
@@ -2203,7 +2203,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/chloe/CLionProjects/OPENGL/cmake-build-debug"
+			"value" : "/home/chloe/CLionProjects/OPENGL2.0/cmake-build-debug"
 		},
 		{
 			"name" : "OpenGLProgram_IS_TOP_LEVEL",
@@ -2227,7 +2227,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/chloe/CLionProjects/OPENGL"
+			"value" : "/home/chloe/CLionProjects/OPENGL2.0"
 		},
 		{
 			"name" : "PKG_CONFIG_ARGN",
@@ -5663,7 +5663,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glew-cmake"
+			"value" : "/home/chloe/CLionProjects/OPENGL2.0/cmake-build-debug/external/glew-cmake"
 		},
 		{
 			"name" : "glew_IS_TOP_LEVEL",
@@ -5687,7 +5687,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/chloe/CLionProjects/OPENGL/external/glew-cmake"
+			"value" : "/home/chloe/CLionProjects/OPENGL2.0/external/glew-cmake"
 		},
 		{
 			"name" : "glm_BINARY_DIR",
@@ -5699,7 +5699,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/chloe/CLionProjects/OPENGL/cmake-build-debug/external/glm"
+			"value" : "/home/chloe/CLionProjects/OPENGL2.0/cmake-build-debug/external/glm"
 		},
 		{
 			"name" : "glm_IS_TOP_LEVEL",
@@ -5723,7 +5723,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/chloe/CLionProjects/OPENGL/external/glm"
+			"value" : "/home/chloe/CLionProjects/OPENGL2.0/external/glm"
 		},
 		{
 			"name" : "libglew_shared_LIB_DEPENDS",

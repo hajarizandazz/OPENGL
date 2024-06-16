@@ -119,11 +119,11 @@
 				},
 				{
 					"backtrace" : 7,
-					"define" : "SHADER_DIR=\"/home/chloe/CLionProjects/OPENGL/shaders/\""
+					"define" : "SHADER_DIR=\"/home/chloe/CLionProjects/OPENGL2.0/shaders/\""
 				},
 				{
 					"backtrace" : 8,
-					"define" : "TEXTURE_DIR=\"/home/chloe/CLionProjects/OPENGL/textures/\""
+					"define" : "TEXTURE_DIR=\"/home/chloe/CLionProjects/OPENGL2.0/textures/\""
 				},
 				{
 					"define" : "libglew_shared_EXPORTS"
@@ -133,19 +133,19 @@
 			[
 				{
 					"backtrace" : 9,
-					"path" : "/home/chloe/CLionProjects/OPENGL/include"
+					"path" : "/home/chloe/CLionProjects/OPENGL2.0/include"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "/home/chloe/CLionProjects/OPENGL/external/glew-cmake/include"
+					"path" : "/home/chloe/CLionProjects/OPENGL2.0/external/glew-cmake/include"
 				},
 				{
 					"backtrace" : 11,
-					"path" : "/home/chloe/CLionProjects/OPENGL/external/glfw/include"
+					"path" : "/home/chloe/CLionProjects/OPENGL2.0/external/glfw/include"
 				},
 				{
 					"backtrace" : 12,
-					"path" : "/home/chloe/CLionProjects/OPENGL/external/glm"
+					"path" : "/home/chloe/CLionProjects/OPENGL2.0/external/glm"
 				}
 			],
 			"language" : "C",
