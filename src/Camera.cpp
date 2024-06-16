@@ -42,6 +42,20 @@
         if (direction == RIGHT)
             Position += Right * velocity;
         Position.y=0.0f; //keep the user on the ground level (no more flying)
+
+        if(Position.x < -4.9f){
+            Position.x = -4.9f;
+        }
+        if(Position.x > 4.9f){
+            Position.x = 4.9f;
+        }
+        if(Position.z < -4.9f){
+            Position.z = -4.9f;
+        }
+        if(Position.z > 4.9f){
+            Position.z = 4.9f;
+        }
+
     }
 
     // processes input received from a mouse input system. Expects the offset value in both the x and y direction.
@@ -66,15 +80,6 @@
         updateCameraVectors();
     }
 
-    // processes input received from a mouse scroll-wheel event. Only requires input on the vertical wheel-axis
-    void Camera::ProcessMouseScroll(float yoffset)
-    {
-        Zoom -= (float)yoffset;
-        if (Zoom < 1.0f)
-            Zoom = 1.0f;
-        if (Zoom > 45.0f)
-            Zoom = 45.0f;
-    }
 
     // calculates the front vector from the Camera's (updated) Euler Angles
     void Camera::updateCameraVectors()
