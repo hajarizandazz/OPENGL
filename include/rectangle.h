@@ -20,4 +20,5 @@ public:
 private:
     GLuint VAO;
     GLuint VBO;
+    GLuint EBO;
 };

@@ -62,21 +62,21 @@ int main()
 
     viewer.scene_root->add(test->all);*/
 
-    Texture *texture = new Texture(texture_dir + "textureherbe.png");
+    Texture *texture = new Texture(texture_dir + "sand_texture.jpg");
 
     Shader *textrect_shader = new Shader(shader_dir + "textrect.vert", shader_dir + "textrect.frag");
 
     Shape* text = new RectangleText(textrect_shader,texture);
 
-    glm::mat4 text_mat = glm::translate(glm::mat4(1.0f), glm::vec3(2.0f, -4.0f, 2.0f))
-        * glm::scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, 1.0f))
+    glm::mat4 text_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, -1.0f, 0.0f))
+        * glm::scale(glm::mat4(1.0f), 10.0f * glm::vec3(1.0f, 1.0f, 1.0f))
         * glm::rotate(glm::mat4(1.0f), glm::radians(90.0f), glm::vec3(1.0f, 0.0f, 0.0f));
 
     Node* text_node = new Node(text_mat);
 
     text_node->add(text);
 
-    viewer.scene_root->add(text);
+    viewer.scene_root->add(text_node);
 
     Finger* Rarm = new Finger(phong_shader, .01f);
     Node* Rshoulder = new Node(glm::translate(glm::mat4(1.0f), glm::vec3(1.0f, 0.0f, 1.0f)));
