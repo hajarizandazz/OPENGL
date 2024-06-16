@@ -113,42 +113,30 @@
 				},
 				{
 					"backtrace" : 6,
-					"define" : "SHADER_DIR=\"C:/Users/zacha/CLionProjects/OPENGL/shaders/\""
+					"define" : "SHADER_DIR=\"/home/chloe/CLionProjects/OPENGL/shaders/\""
 				},
 				{
 					"backtrace" : 7,
-					"define" : "TEXTURE_DIR=\"C:/Users/zacha/CLionProjects/OPENGL/textures/\""
-				},
-				{
-					"backtrace" : 3,
-					"define" : "VC_EXTRALEAN"
-				},
-				{
-					"backtrace" : 3,
-					"define" : "WIN32_MEAN_AND_LEAN"
-				},
-				{
-					"backtrace" : 3,
-					"define" : "_CRT_SECURE_NO_WARNINGS"
+					"define" : "TEXTURE_DIR=\"/home/chloe/CLionProjects/OPENGL/textures/\""
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 8,
-					"path" : "C:/Users/zacha/CLionProjects/OPENGL/include"
+					"path" : "/home/chloe/CLionProjects/OPENGL/include"
 				},
 				{
 					"backtrace" : 9,
-					"path" : "C:/Users/zacha/CLionProjects/OPENGL/external/glew-cmake/include"
+					"path" : "/home/chloe/CLionProjects/OPENGL/external/glew-cmake/include"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Users/zacha/CLionProjects/OPENGL/external/glfw/include"
+					"path" : "/home/chloe/CLionProjects/OPENGL/external/glfw/include"
 				},
 				{
 					"backtrace" : 11,
-					"path" : "C:/Users/zacha/CLionProjects/OPENGL/external/glm"
+					"path" : "/home/chloe/CLionProjects/OPENGL/external/glm"
 				}
 			],
 			"language" : "C",
@@ -170,7 +158,7 @@
 		],
 		"prefix" : 
 		{
-			"path" : "C:/Program Files (x86)/OpenGLProgram"
+			"path" : "/usr/local"
 		}
 	},
 	"name" : "libglew_static",
