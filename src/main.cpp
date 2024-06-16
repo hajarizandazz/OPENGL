@@ -21,8 +21,16 @@
 #error "TEXTURE_DIR not defined"
 #endif
 
+
+static void alignJointsR(Finger* f,Finger* hand) {
+    auto id = glm::mat4(1.0f);
+    glm::vec3 FingerToHand = hand->headEgg->get2Pos() - f->baseEgg->get1Pos();
+    //f->base->move(translate(id, MidToBase));
+}
+
 int main()
 {
+
     // create window, add shaders & scene objects, then run rendering loop
     Viewer viewer;
 
@@ -155,25 +163,48 @@ int main()
 
 
 
-    Finger* Rarm = new Finger(phong_shader, .01f);
-    Node* Rshoulder = new Node(glm::translate(glm::mat4(1.0f), glm::vec3(1.0f, 0.0f, 1.0f)));
+    Finger* Rarm = new Finger(phong_shader, .1f);
+    Node* Rshoulder = new Node(glm::translate(glm::mat4(1.0f), glm::vec3(-1.0f, -0.5f, 1.0f)));
     Rshoulder->add(Rarm->base);
-    viewer.scene_root->add(Rshoulder);
+
 
     Finger* Larm = new Finger(phong_shader, .01f);
-    Node* Lshoulder = new Node(glm::translate(glm::mat4(1.0f), glm::vec3(1.0f, 0.0f, 1.0f)));
+    Node* Lshoulder = new Node(glm::translate(glm::mat4(1.0f), glm::vec3(-1.0f, 0.0f, -1.0f)));
     Lshoulder->add(Larm->base);
     viewer.scene_root->add(Lshoulder);
 
     Finger* Rfing1 = new Finger(phong_shader, .01f);
+    Node* Rfing1_node = new Node(glm::rotate(glm::mat4(1.0f), glm::radians(25.0f), glm::vec3(1.0f, 0.0f, 0.0f)));
+    Rfing1_node->add(Rfing1->base);
     Finger* Rfing2 = new Finger(phong_shader, .01f);
+    Node* Rfing2_node = new Node(glm::rotate(glm::mat4(1.0f), glm::radians(25.0f), glm::vec3(0.0f, 1.0f, 0.0f)));
+    Rfing2_node->add(Rfing2->base);
     Finger* Rfing3 = new Finger(phong_shader, .01f);
+    Node* Rfing3_node = new Node(glm::rotate(glm::mat4(1.0f), glm::radians(25.0f), glm::vec3(0.0f, 0.0f, 1.0f)));
+    Rfing3_node->add(Rfing3->base);
 
-    Node* Rhand = new Node(glm::translate(glm::mat4(1.0f), glm::vec3(1.0f, 0.0f, 1.0f)));
-    Rhand->add(Rfing1->base);
-    Rhand->add(Rfing2->base);
-    Rhand->add(Rfing3->base);
-    viewer.scene_root->add(Rhand);
+    //alignJointsR(Rfing1,Rarm);
+    //auto id = glm::mat4(1.0f);
+    //glm::vec3 PosHand = Rarm->getHeadEgg()->get2Pos();
+    //glm::vec3 PosFing = Rfing1->baseEgg->get1Pos();
+    //glm::vec3 FingerToHand = glm::vec3(PosHand[0]-PosFing[0],PosHand[1]-PosFing[1],PosHand[2]-PosFing[2]);
+    //glm::vec3 FingerToHand = Rarm->headEgg->get2Pos() - Rfing1->baseEgg->get1Pos();
+    //Rfing1->base->move(translate(id, FingerToHand));
+    //alignJointsR(*Rfing2,*Rarm);
+    //alignJointsR(*Rfing3,*Rarm);
+
+    Node* Rhand = new Node(glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.38f, 0.0f)));
+    Rhand->add(Rfing1_node);
+    Rhand->add(Rfing2_node);
+    Rhand->add(Rfing3_node);
+
+    Rshoulder->add(Rhand);
+
+
+
+
+    viewer.scene_root->add(Rshoulder);
 
     viewer.run();
 }
+
