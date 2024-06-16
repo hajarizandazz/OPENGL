@@ -11,6 +11,7 @@
 #include "Finger.h"
 #include "rectangle.h"
 #include "RectangleText.h"
+#include "rectangleLight.h"
 
 #ifndef SHADER_DIR
 #error "SHADER_DIR not defined"
@@ -81,7 +82,7 @@ int main()
 
 //les murs
 
-    Shape* rect1 = new Rectangle(phong_shader);
+    Shape* rect1 = new rectangleLight(phong_shader, glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 1.0f));
 
     glm::mat4 rect1_mat = glm::translate(glm::mat4(1.0f), glm::vec3(5.0f, 0.0f, 0.0f))
                          * glm::scale(glm::mat4(1.0f), 10.0f * glm::vec3(1.0f, 1.0f, 1.0f))
@@ -95,7 +96,7 @@ int main()
 
 
 
-    Shape* rect2 = new Rectangle(phong_shader);
+    Shape* rect2 = new rectangleLight(phong_shader, glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 1.0f));
 
     glm::mat4 rect2_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, 5.0f))
                           * glm::scale(glm::mat4(1.0f), 10.0f * glm::vec3(1.0f, 1.0f, 1.0f))
@@ -110,7 +111,7 @@ int main()
 
 
 
-    Shape* rect3 = new Rectangle(phong_shader);
+    Shape* rect3 = new rectangleLight(phong_shader, glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 1.0f));
 
     glm::mat4 rect3_mat = glm::translate(glm::mat4(1.0f), glm::vec3(-5.0f, 0.0f, 0.0f))
                           * glm::scale(glm::mat4(1.0f), 10.0f * glm::vec3(1.0f, 1.0f, 1.0f))
@@ -124,7 +125,7 @@ int main()
 
 
 
-    Shape* rect4 = new Rectangle(phong_shader);
+    Shape* rect4 = new rectangleLight(phong_shader, glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 1.0f));
 
     glm::mat4 rect4_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, -5.0f))
                           * glm::scale(glm::mat4(1.0f), 10.0f * glm::vec3(1.0f, 1.0f, 1.0f))
@@ -139,7 +140,7 @@ int main()
 
 //le ciel
 
-    Shape* rect5 = new Rectangle(phong_shader);
+    Shape* rect5 = new rectangleLight(phong_shader, glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 1.0f));
 
     glm::mat4 rect5_mat = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 5.0f, 0.0f))
                           * glm::scale(glm::mat4(1.0f), 10.0f * glm::vec3(1.0f, 1.0f, 1.0f))
