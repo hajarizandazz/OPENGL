@@ -1,6 +1,5 @@
 #include "viewer.h"
 
-
 #include <iostream>
 #include <glm/glm.hpp>
 #include "glm/ext.hpp"
@@ -15,7 +14,6 @@ Viewer::Viewer(int width, int height)
        std::cerr << "Failed to initialize GLFW" << std::endl;
        glfwTerminate();
    }
-
 
    // version hints: create GL window with >= OpenGL 3.3 and core profile
    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
