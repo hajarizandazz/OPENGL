@@ -13,5 +13,4 @@ CMakeDoxygenDefaults.cmake
 Makefile
 test_fs_support_CASE_sensitivity
 build/
-cmake-build-debug
 
