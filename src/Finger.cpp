@@ -32,7 +32,7 @@ Finger::Finger(Shader *shader_program, float size) {
     mid->add(head);
     base->add(mid);
 
-    auto MidToBase = baseEgg->get1Pos() - midEgg->get2Pos(); // error ?
+    auto MidToBase = baseEgg->get1Pos() - midEgg->get2Pos();
     mid->move(translate(id, MidToBase));
     auto HeadToMid = midEgg->get1Pos() - headEgg->get2Pos();
     head->move(translate(id, HeadToMid));
@@ -40,7 +40,7 @@ Finger::Finger(Shader *shader_program, float size) {
 
 void Finger::alignJoints() {
     auto id = glm::mat4(1.0f);
-    auto MidToBase = baseEgg->get1Pos() - midEgg->get2Pos(); // error ?
+    auto MidToBase = baseEgg->get1Pos() - midEgg->get2Pos();
     mid->move(translate(id, MidToBase));
     auto HeadToMid = midEgg->get1Pos() - headEgg->get2Pos();
     head->move(translate(id, HeadToMid));
@@ -50,6 +50,8 @@ void Finger::transform(glm::mat4 transfo) {
     base->move(transfo);
     alignJoints();
 }
+
+Egg* Finger::getHeadEgg(){return headEgg;}
 
 void Finger::rotateElbow(int angle) {}
 void Finger::rotateCurl(int angle) {}

@@ -27,6 +27,8 @@ public:
 
     void transform(glm::mat4 transfo);
 
+    Egg* getHeadEgg();
+
     void rotateElbow(int angle);
     void rotateCurl(int angle);
     void rotateWave(int angle);
