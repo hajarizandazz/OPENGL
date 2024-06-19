@@ -8,8 +8,6 @@
 #include <../external/glew-cmake/include/GL/glew.h>
 #include <texture.h>
 
-
-
 class Rectangle : public Shape {
 public:
     Rectangle(Shader *shader_program);
@@ -20,4 +18,5 @@ public:
 private:
     GLuint VAO;
     GLuint VBO;
+    GLuint EBO;
 };

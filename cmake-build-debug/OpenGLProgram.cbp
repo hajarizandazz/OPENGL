@@ -485,6 +485,9 @@
 		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/include/rectangle.h">
 			<Option target="opengl_program"/>
 		</Unit>
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/include/rectangleLight.h">
+			<Option target="opengl_program"/>
+		</Unit>
 		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/src/Camera.cpp">
 			<Option target="opengl_program"/>
 		</Unit>
@@ -513,6 +516,9 @@
 			<Option target="opengl_program"/>
 		</Unit>
 		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/src/rectangle.cpp">
+			<Option target="opengl_program"/>
+		</Unit>
+		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/src/rectangleLight.cpp">
 			<Option target="opengl_program"/>
 		</Unit>
 		<Unit filename="C:/Users/zacha/CLionProjects/OPENGL/src/shader.cpp">

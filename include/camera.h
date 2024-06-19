@@ -4,9 +4,9 @@
 
 #pragma once
 
-
 #include <glm/fwd.hpp>
 #include <glm/vec3.hpp>
+
 
 class Camera {
     public :
@@ -30,12 +30,19 @@ class Camera {
     float MovementSpeed;
     float MouseSensitivity;
     float Zoom;
+
+
+    glm::vec3 getPosition();
+    float getYaw();
     glm::mat4 GetViewMatrix();
     void ProcessKeyboard(Camera_Movement direction, float deltaTime);
     void ProcessMouseMovement(float xoffset, float yoffset, bool constrainPitch = true);
     void ProcessMouseScroll(float yoffset);
 
+
     private :
     void updateCameraVectors();
 
+
 };
+

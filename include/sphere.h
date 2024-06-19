@@ -27,5 +27,6 @@ private:
     unsigned int num_indices;
 
     GLuint VAO;
-    GLuint buffers[3];
+    GLuint buffers[4];
+    std::vector<glm::vec2> texCoords;
 };
