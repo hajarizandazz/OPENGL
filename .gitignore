@@ -3,7 +3,6 @@
 .obj/
 *.o
 main
-CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
 opengl_program
