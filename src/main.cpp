@@ -48,7 +48,7 @@ int main()
 
    Texture *texterre = new Texture(texture_dir + "BeachBall.jpg");
    Shape* sphere1 = new TexturedSphere(texture_shader, texterre);
-   glm::mat4 sphere1_mat = translate(glm::mat4(1.0f), glm::vec3(-1.0f, 0.0f, -4.0f))
+   glm::mat4 sphere1_mat = translate(glm::mat4(1.0f), glm::vec3(-1.0f, -0.5f, -2.0f))
                            * scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, 1.0f))
                            * rotate(glm::mat4(1.0f), glm::radians(0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
    Node* sphere1_node = new Node(sphere1_mat);
@@ -125,24 +125,32 @@ int main()
 // Bras
 
    Finger* Rarm = new Finger(phong_shader, .1f);
-   Node* Rshoulder = new Node(translate(glm::mat4(1.0f), glm::vec3(-1.0f, -0.5f, 1.0f)));
+   static Node* Rshoulder = new Node(translate(glm::mat4(1.0f), glm::vec3(-1.0f, -0.75f, 1.0f))
+                         * scale(glm::mat4(1.0f), 3.0f * glm::vec3(1.0f, 1.0f, 1.0f)));
    Rshoulder->add(Rarm->base);
 
 
-   Finger* Larm = new Finger(phong_shader, .01f);
-   Node* Lshoulder = new Node(translate(glm::mat4(1.0f), glm::vec3(-1.0f, 0.0f, -1.0f)));
-   Lshoulder->add(Larm->base);
-   viewer.scene_root->add(Lshoulder);
+   //Finger* Larm = new Finger(phong_shader, .01f);
+   //Node* Lshoulder = new Node(translate(glm::mat4(1.0f), glm::vec3(-1.0f, 0.0f, -1.0f)));
+   //Lshoulder->add(Larm->base);
+   //viewer.scene_root->add(Lshoulder);
 
 
    Finger* Rfing1 = new Finger(phong_shader, .01f);
-   Node* Rfing1_node = new Node(rotate(glm::mat4(1.0f), glm::radians(25.0f), glm::vec3(1.0f, 0.0f, 0.0f)));
-   Rfing1_node->add(Rfing1->base);
+    Rfing1->rotateElbow();
+    Rfing1->rotateCurl();
+   Node* Rfing1_node = new Node(translate(glm::mat4(1.0f), glm::vec3(-0.05f, 0.25f, 0.0f))
+                               * scale(glm::mat4(1.0f), 3.0f * glm::vec3(1.0f, 1.5f, 1.5f))
+                               * rotate(glm::mat4(1.0f), glm::radians(90.0f), glm::vec3(0.0f, 0.0f, 1.0f)));
+
+    Rfing1_node->add(Rfing1->base);
    Finger* Rfing2 = new Finger(phong_shader, .01f);
-   Node* Rfing2_node = new Node(rotate(glm::mat4(1.0f), glm::radians(25.0f), glm::vec3(0.0f, 1.0f, 0.0f)));
+   Node* Rfing2_node = new Node(translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, 0.0f))
+                     * rotate(glm::mat4(1.0f), glm::radians(90.0f), glm::vec3(0.0f, 0.0f, 1.0f)));
    Rfing2_node->add(Rfing2->base);
    Finger* Rfing3 = new Finger(phong_shader, .01f);
-   Node* Rfing3_node = new Node(rotate(glm::mat4(1.0f), glm::radians(25.0f), glm::vec3(0.0f, 0.0f, 1.0f)));
+   Node* Rfing3_node = new Node(translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, 0.0f))
+                     * rotate(glm::mat4(1.0f), glm::radians(90.0f), glm::vec3(0.0f, 0.0f, 1.0f)));
    Rfing3_node->add(Rfing3->base);
 
    //alignJointsR(Rfing1,Rarm);
@@ -155,12 +163,14 @@ int main()
    //alignJointsR(*Rfing2,*Rarm);
    //alignJointsR(*Rfing3,*Rarm);
 
-   Node* Rhand = new Node(translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.38f, 0.0f)));
-   Rhand->add(Rfing1_node);
-   Rhand->add(Rfing2_node);
-   Rhand->add(Rfing3_node);
+   //Node* Rhand = new Node(translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.38f, 0.0f)));
+   //Rhand->add(Rfing1_node);
+   //Rhand->add(Rfing2_node);
+   //Rhand->add(Rfing3_node);
 
-   Rshoulder->add(Rhand);
+   Rshoulder->add(Rfing1_node);
+   Rshoulder->add(Rfing2_node);
+   Rshoulder->add(Rfing3_node);
    viewer.scene_root->add(Rshoulder);
 
 

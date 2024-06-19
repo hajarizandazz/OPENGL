@@ -8,47 +8,47 @@
 		<Option virtualFolders="CMake Files\;CMake Files\external\;CMake Files\external\glfw\;CMake Files\external\glfw\CMake\;CMake Files\external\glfw\src\;CMake Files\external\glfw\docs\;CMake Files\external\glew-cmake\;CMake Files\external\glm\;CMake Files\external\glm\glm\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/chloe/CLionProjects/OPENGL2.0/cmake-build-debug/external/glm"/>
+				<Option working_dir="C:/Users/chloe/CLionProjects/OPENGL1.0/cmake-build-debug/external/glm"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL2.0/cmake-build-debug/external/glm/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL2.0/cmake-build-debug/external/glm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL2.0/cmake-build-debug/external/glm/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/chloe/CLionProjects/OPENGL2.0/cmake-build-debug/external/glm/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/chloe/CLionProjects/OPENGL1.0/cmake-build-debug/external/glm/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/chloe/CLionProjects/OPENGL1.0/cmake-build-debug/external/glm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/chloe/CLionProjects/OPENGL1.0/cmake-build-debug/external/glm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/chloe/CLionProjects/OPENGL1.0/cmake-build-debug/external/glm/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL2.0/CMakeLists.txt">
+		<Unit filename="C:/Users/chloe/CLionProjects/OPENGL1.0/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL2.0/external/glfw/CMakeLists.txt">
+		<Unit filename="C:/Users/chloe/CLionProjects/OPENGL1.0/external/glfw/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\external\glfw\"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL2.0/external/glfw/CMake/cmake_uninstall.cmake.in">
+		<Unit filename="C:/Users/chloe/CLionProjects/OPENGL1.0/external/glfw/CMake/cmake_uninstall.cmake.in">
 			<Option virtualFolder="CMake Files\external\glfw\CMake\"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL2.0/external/glfw/CMake/glfw3.pc.in">
+		<Unit filename="C:/Users/chloe/CLionProjects/OPENGL1.0/external/glfw/CMake/glfw3.pc.in">
 			<Option virtualFolder="CMake Files\external\glfw\CMake\"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL2.0/external/glfw/CMake/glfw3Config.cmake.in">
+		<Unit filename="C:/Users/chloe/CLionProjects/OPENGL1.0/external/glfw/CMake/glfw3Config.cmake.in">
 			<Option virtualFolder="CMake Files\external\glfw\CMake\"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL2.0/external/glfw/src/CMakeLists.txt">
+		<Unit filename="C:/Users/chloe/CLionProjects/OPENGL1.0/external/glfw/src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\external\glfw\src\"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL2.0/external/glfw/docs/CMakeLists.txt">
+		<Unit filename="C:/Users/chloe/CLionProjects/OPENGL1.0/external/glfw/docs/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\external\glfw\docs\"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL2.0/external/glew-cmake/CMakeLists.txt">
+		<Unit filename="C:/Users/chloe/CLionProjects/OPENGL1.0/external/glew-cmake/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\external\glew-cmake\"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL2.0/external/glew-cmake/GeneratePkgConfig.cmake">
+		<Unit filename="C:/Users/chloe/CLionProjects/OPENGL1.0/external/glew-cmake/GeneratePkgConfig.cmake">
 			<Option virtualFolder="CMake Files\external\glew-cmake\"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL2.0/external/glm/CMakeLists.txt">
+		<Unit filename="C:/Users/chloe/CLionProjects/OPENGL1.0/external/glm/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\external\glm\"/>
 		</Unit>
-		<Unit filename="/home/chloe/CLionProjects/OPENGL2.0/external/glm/glm/CMakeLists.txt">
+		<Unit filename="C:/Users/chloe/CLionProjects/OPENGL1.0/external/glm/glm/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\external\glm\glm\"/>
 		</Unit>
 	</Project>

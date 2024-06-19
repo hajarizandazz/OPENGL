@@ -42,6 +42,7 @@ set(SOURCES
         include/Egg.h
         src/rectangleLight.cpp
         include/rectangleLight.h
+        external/glew-cmake/include/GL/eglew.h
 )
 
 # Define Shader director
@@ -62,5 +63,6 @@ set(LIBS ${LIBS} glfw)
 add_subdirectory(${GLM_DIR})
 
 # Executable
-add_executable(opengl_program ${SOURCES})
+add_executable(opengl_program ${SOURCES}
+        external/glew-cmake/include/GL/eglew.h)
 target_link_libraries(opengl_program ${LIBS})

@@ -29,8 +29,8 @@ public:
 
     Egg* getHeadEgg();
 
-    void rotateElbow(int angle);
-    void rotateCurl(int angle);
+    void rotateElbow();
+    void rotateCurl();
     void rotateWave(int angle);
 };
 

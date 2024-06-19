@@ -39,7 +39,8 @@ option(GLEW_OSMESA "Off-screen Mesa mode" OFF)
 option(PKG_CONFIG_REPRESENTATIVE_TARGET "Generate pc file for specified target as glew. libglew_static|libglew_shared" OFF)
 option(ONLY_LIBS "Do not build executables" OFF)
 
-set(LIBGLEW_SRCS ${SRC_DIR}/glew.c)
+set(LIBGLEW_SRCS ${SRC_DIR}/glew.c
+		include/GL/eglew.h)
 
 set(DEFINITIONS)
 if(WIN32)
@@ -212,7 +213,8 @@ function(set_representative_target TARGET)
 endfunction()
 
 if(glew-cmake_BUILD_STATIC)
-	add_library(libglew_static STATIC ${LIBGLEW_SRCS})
+	add_library(libglew_static STATIC ${LIBGLEW_SRCS}
+			include/GL/eglew.h)
 
 	set_representative_target(libglew_static)
 
@@ -221,7 +223,8 @@ if(glew-cmake_BUILD_STATIC)
 endif()
 
 if(glew-cmake_BUILD_SHARED)
-	add_library(libglew_shared SHARED ${LIBGLEW_SRCS})
+	add_library(libglew_shared SHARED ${LIBGLEW_SRCS}
+			include/GL/eglew.h)
 
 	if(glew-cmake_BUILD_STATIC)
 		set_target_properties(libglew_shared PROPERTIES
@@ -265,15 +268,19 @@ file(GLOB PUBLIC_HEADERS "include/GL/*.h")
 install(FILES ${PUBLIC_HEADERS} DESTINATION include/GL)
 
 if(../../../../AppData/Local/Temp/Rar\$DRa2356.41763/glew-cmake-master STREQUAL ${CMAKE_SOURCE_DIR} AND NOT ONLY_LIBS)
-	set(GLEWINFO_SRCS ${SRC_DIR}/glewinfo.c)
-	set(VISUALINFO_SRCS ${SRC_DIR}/visualinfo.c)
+	set(GLEWINFO_SRCS ${SRC_DIR}/glewinfo.c
+			include/GL/eglew.h)
+	set(VISUALINFO_SRCS ${SRC_DIR}/visualinfo.c
+			include/GL/eglew.h)
 	if(MSVS)
 		list(APPEND GLEWINFO_SRCS ${RC_DIR}/glewinfo.rc)
 		list(APPEND VISUALINFO_SRCS ${RC_DIR}/visualinfo.rc)
 	endif()
 
-	add_executable(glewinfo ${GLEWINFO_SRCS})
-	add_executable(visualinfo ${VISUALINFO_SRCS})
+	add_executable(glewinfo ${GLEWINFO_SRCS}
+			include/GL/eglew.h)
+	add_executable(visualinfo ${VISUALINFO_SRCS}
+			include/GL/eglew.h)
 
 	if(glew-cmake_BUILD_STATIC)
 		target_link_libraries(glewinfo libglew_static)

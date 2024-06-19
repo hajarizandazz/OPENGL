@@ -42,7 +42,8 @@ source_group("SIMD Files" FILES ${SIMD_SOURCE})
 source_group("SIMD Files" FILES ${SIMD_INLINE})
 source_group("SIMD Files" FILES ${SIMD_HEADER})
 
-add_library(glm INTERFACE)
+add_library(glm INTERFACE
+		../../glew-cmake/include/GL/eglew.h)
 
 include(GNUInstallDirs)
 
@@ -60,7 +61,8 @@ add_library(glm_static STATIC ${ROOT_TEXT} ${ROOT_MD} ${ROOT_NAT}
 	${EXT_SOURCE}     ${EXT_INLINE}     ${EXT_HEADER}
 	${GTC_SOURCE}     ${GTC_INLINE}     ${GTC_HEADER}
 	${GTX_SOURCE}     ${GTX_INLINE}     ${GTX_HEADER}
-	${SIMD_SOURCE}    ${SIMD_INLINE}    ${SIMD_HEADER})
+	${SIMD_SOURCE}    ${SIMD_INLINE}    ${SIMD_HEADER}
+		../../glew-cmake/include/GL/eglew.h)
 	target_link_libraries(glm_static PUBLIC glm)
 	add_library(glm::glm_static ALIAS glm_static)
 endif()
@@ -72,7 +74,8 @@ add_library(glm_shared SHARED ${ROOT_TEXT} ${ROOT_MD} ${ROOT_NAT}
 	${EXT_SOURCE}     ${EXT_INLINE}     ${EXT_HEADER}
 	${GTC_SOURCE}     ${GTC_INLINE}     ${GTC_HEADER}
 	${GTX_SOURCE}     ${GTX_INLINE}     ${GTX_HEADER}
-	${SIMD_SOURCE}    ${SIMD_INLINE}    ${SIMD_HEADER})
+	${SIMD_SOURCE}    ${SIMD_INLINE}    ${SIMD_HEADER}
+		../../glew-cmake/include/GL/eglew.h)
 	target_link_libraries(glm_shared PUBLIC glm)
 	add_library(glm::glm_shared ALIAS glm_shared)
 endif()

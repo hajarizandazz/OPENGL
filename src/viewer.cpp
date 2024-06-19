@@ -91,8 +91,8 @@ void Viewer::run()
 
        glm::mat4 view = glm::mat4(1.0f); // make sure to initialize matrix to identity matrix first
        float radius = 10.0f;
-       float camX = static_cast<float>(sin(glfwGetTime()) * radius);
-       float camZ = static_cast<float>(cos(glfwGetTime()) * radius);
+       //float camX = static_cast<float>(sin(glfwGetTime()) * radius);
+      // float camZ = static_cast<float>(cos(glfwGetTime()) * radius);
        view = cam->GetViewMatrix();
 
 
@@ -139,8 +139,6 @@ void Viewer::on_key(int key)
 
 
    deltaTime = 0.05;
-
-
 
 
    if (key == GLFW_KEY_ESCAPE || key == GLFW_KEY_Q)
