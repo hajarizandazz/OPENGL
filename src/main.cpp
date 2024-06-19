@@ -131,7 +131,7 @@ int main()
                          * scale(glm::mat4(1.0f), 3.0f * glm::vec3(1.0f, 1.0f, 1.0f)));
    Rshoulder->add(Rarm->base);
 
-    Egg* cache= new Egg(1.3f,phong_shader, glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+    Egg* cache= new Egg(1.3f,phong_shader, glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 1.0f, 0.0f));
     Node* Cache_node = new Node(translate(glm::mat4(1.0f), glm::vec3(-1.0f, -0.75f, 1.0f))
                          * scale(glm::mat4(1.0f), 4.0f * glm::vec3(1.0f, 1.0f, 1.0f)));
     Cache_node->add(cache->baseNode);
