@@ -56,8 +56,10 @@ int main()
    viewer.scene_root->add(sphere1_node);
 
    Shader *phong_shader = new Shader(shader_dir + "phong.vert", shader_dir + "phong.frag");
-   Shape* palmR = new LightingSphere(phong_shader, glm::vec3(-5.0f, -5.0f, 5.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 1.0f));
-   glm::mat4 palmR_mat = translate(glm::mat4(1.0f), glm::vec3(1.0f, 0.0f, -4.0f))
+
+
+    Shape* palmR = new LightingSphere(phong_shader, glm::vec3(-5.0f, -5.0f, 5.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 0.0f, 1.0f));
+   glm::mat4 palmR_mat = translate(glm::mat4(1.0f), glm::vec3(100.0f, 0.0f, -4.0f))
                         * scale(glm::mat4(1.0f), glm::vec3(1.0f, 1.0f, 1.0f))
                         * rotate(glm::mat4(1.0f), glm::radians(0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
    Node* palmR_node = new Node(palmR_mat);
@@ -125,15 +127,15 @@ int main()
 // Bras
 
    Finger* Rarm = new Finger(phong_shader, .1f);
-   static Node* Rshoulder = new Node(translate(glm::mat4(1.0f), glm::vec3(-1.0f, -0.75f, 1.0f))
+   Node* Rshoulder = new Node(translate(glm::mat4(1.0f), glm::vec3(-1.0f, -0.75f, 1.0f))
                          * scale(glm::mat4(1.0f), 3.0f * glm::vec3(1.0f, 1.0f, 1.0f)));
    Rshoulder->add(Rarm->base);
 
-
-   //Finger* Larm = new Finger(phong_shader, .01f);
-   //Node* Lshoulder = new Node(translate(glm::mat4(1.0f), glm::vec3(-1.0f, 0.0f, -1.0f)));
-   //Lshoulder->add(Larm->base);
-   //viewer.scene_root->add(Lshoulder);
+    Egg* cache= new Egg(1.3f,phong_shader, glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(1.0f, 1.0f, 1.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+    Node* Cache_node = new Node(translate(glm::mat4(1.0f), glm::vec3(-1.0f, -0.75f, 1.0f))
+                         * scale(glm::mat4(1.0f), 4.0f * glm::vec3(1.0f, 1.0f, 1.0f)));
+    Cache_node->add(cache->baseNode);
+    viewer.scene_root->add(Cache_node);
 
 
    Finger* Rfing1 = new Finger(phong_shader, .01f);

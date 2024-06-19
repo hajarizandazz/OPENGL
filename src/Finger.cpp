@@ -12,7 +12,7 @@
 #include <iostream>
 
 Finger::Finger(Shader *shader_program, float size) {
-    auto color = glm::vec3(0.0f, 1.0f, 1.0f);
+    auto color = glm::vec3(0.0f, 1.0f, 0.0f);
     auto lightpos = glm::vec3(1.0f, 1.0f, 1.0f);
     auto id = glm::mat4(1.0f);
 
@@ -55,7 +55,7 @@ Egg* Finger::getHeadEgg(){return headEgg;}
 
 void Finger::rotateElbow() {
     mid->move(rotate(glm::mat4(1.0f), glm::radians(-90.0f), glm::vec3(0.0f, 0.0f, 1.0f)));
-     mid->move(translate(glm::mat4(1.0f), glm::vec3(0.009f, 0.01f, 0.0f)));
+    mid->move(translate(glm::mat4(1.0f), glm::vec3(0.009f, 0.01f, 0.0f)));
 }
 void Finger::rotateCurl() {
     head->move(rotate(glm::mat4(1.0f), glm::radians(90.0f), glm::vec3(0.0f, 0.0f, 1.0f)));
